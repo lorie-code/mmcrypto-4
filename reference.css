@@ -1113,3 +1113,247 @@ body.reference-site .footer-wordmark .footer-brand-logo { display:none !importan
     transform:translateY(17%);
   }
 }
+
+/* FINAL UI KIT PASS — use the supplied artwork and match the reference board. */
+body.reference-site .brand-logo {
+  width:150px;
+  height:auto;
+  filter:none;
+}
+body.reference-site #site-nav {
+  gap:8px;
+  padding:8px 12px 8px 16px;
+  font-size:16px;
+  letter-spacing:-.15px;
+}
+body.reference-site #site-nav a,
+body.reference-site #site-nav .nav-signin {
+  padding:8px 11px;
+  color:#2c3643;
+}
+body.reference-site .header-cta {
+  min-height:38px;
+  padding:10px 18px;
+  font-size:12px;
+}
+body.reference-site .hero.prism-hero-v2::after {
+  inset:-24px -10vw -72px -10vw;
+  background:url("assets/mmcrypto-vector.png") center / cover no-repeat;
+  opacity:1;
+  filter:saturate(1.06) contrast(1.04);
+  transform:scale(1.035);
+  animation:ref-vector-drift 22s ease-in-out infinite alternate;
+  animation-play-state:var(--prism-play-state,running);
+  will-change:transform,background-position;
+}
+@keyframes ref-vector-drift {
+  0% { transform:scale(1.035) translate3d(-1.2%,0,0); background-position:48% 50%; }
+  100% { transform:scale(1.085) translate3d(1.2%,-.8%,0); background-position:53% 48%; }
+}
+body.reference-site .hero .hero-intro {
+  max-width:390px;
+  padding-left:0;
+}
+body.reference-site .hero .hero-intro::before { display:none !important; }
+body.reference-site .hero .hero-member-invite {
+  position:absolute;
+  left:auto !important;
+  top:clamp(112px,9vw,180px);
+  right:clamp(70px,10vw,190px);
+  width:clamp(155px,12vw,230px);
+  height:clamp(155px,12vw,230px);
+  display:block !important;
+  margin:0;
+  max-width:none;
+  z-index:8;
+  pointer-events:auto;
+}
+body.reference-site .hero .hero-member-invite::before {
+  content:"";
+  display:block;
+  width:100%;
+  height:100%;
+  border:1px solid #b5e8ffb8;
+  border-radius:28px;
+  background:url("assets/chris-hero.webp") center 36% / cover no-repeat;
+  box-shadow:0 20px 48px #000b,0 0 0 8px #2d9fff1a,0 0 42px #39baff4d;
+  animation:ref-avatar-float 7s ease-in-out infinite;
+  animation-play-state:var(--prism-play-state,running);
+}
+body.reference-site .hero .hero-member-invite p { display:none !important; }
+@keyframes ref-avatar-float {
+  0%,100% { transform:translate3d(0,0,0) rotate(0deg); }
+  50% { transform:translate3d(0,-7px,0) rotate(.35deg); }
+}
+body.reference-site .hero .hero-browse {
+  border-color:#c7d2dd;
+  background:transparent;
+  color:#f5f9ff;
+  box-shadow:none;
+}
+body.reference-site .hero .hero-browse:hover {
+  border-color:#fff;
+  background:#ffffff0d;
+}
+body.reference-site .hero .hero-browse .icon {
+  width:14px;
+  height:14px;
+  padding:0;
+  border-radius:0;
+  background:transparent;
+  color:#f5f9ff;
+}
+body.reference-site .footer-wordmark-text { display:none !important; }
+body.reference-site .footer-brand-logo {
+  display:block !important;
+  width:100%;
+  max-width:none;
+  height:auto;
+  margin:0 auto;
+  transform:translateY(12%);
+  filter:none;
+  opacity:1;
+}
+body.reference-site .social-icon.youtube { color:#ff5b68; }
+body.reference-site .social-icon.instagram { color:#c36dff; }
+body.reference-site .social-icon.telegram { color:#67cfff; }
+body.reference-site .social-icon:not(.youtube):not(.instagram):not(.telegram) { color:#dbeaff; }
+body.reference-site .journey-arrows button { color:#76d8ff; border-color:#315c7c; }
+body.reference-site .research-play { color:#06304b; background:#79d9ff; }
+@media (max-width:900px) {
+  body.reference-site .brand-logo { width:150px; }
+  body.reference-site #site-nav { font-size:16px; }
+  body.reference-site .hero .hero-member-invite {
+    left:auto !important;
+    top:120px;
+    right:7%;
+    width:clamp(130px,18vw,180px);
+    height:clamp(130px,18vw,180px);
+  }
+  body.reference-site .hero .hero-intro { max-width:calc(100% - 205px); }
+}
+@media (max-width:600px) {
+  body.reference-site .brand-logo { width:128px; }
+  body.reference-site .hero .hero-member-invite {
+    left:auto !important;
+    top:135px;
+    right:16px;
+    width:104px;
+    height:104px;
+  }
+  body.reference-site .hero .hero-intro {
+    max-width:calc(100% - 118px);
+    font-size:10px;
+  }
+  body.reference-site .footer-brand-logo {
+    width:104%;
+    margin-left:-2%;
+    transform:translateY(12%);
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  body.reference-site .hero.prism-hero-v2::after,
+  body.reference-site .hero .hero-member-invite::before { animation:none; }
+}
+
+/* The footer image must win over the retired text-lockup hide rule. */
+body.reference-site .footer-wordmark .footer-brand-logo {
+  display:block !important;
+  visibility:visible !important;
+}
+
+/* FINAL FEEDBACK PASS — remove the footer outline, restore white controls and
+   make the opening artwork visibly move while preserving the reduced-motion
+   and pause controls already used by the site. */
+body.reference-site .footer-wordmark,
+body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+  border:0 !important;
+}
+body.reference-site .site-footer {
+  border-top:0 !important;
+}
+body.reference-site .footer-bottom {
+  border-top:0 !important;
+}
+body.reference-site .research-play {
+  background:#fff !important;
+  color:#06111b !important;
+  box-shadow:0 6px 22px #000b, 0 0 0 1px #ffffffaa;
+}
+body.reference-site .research-thumb:hover .research-play {
+  background:#fff !important;
+  color:#06111b !important;
+}
+body.reference-site .social-icon,
+body.reference-site .social-arrow {
+  color:#fff !important;
+}
+body.reference-site .hero.prism-hero-v2::before {
+  animation:ref-hero-bloom 9s ease-in-out infinite alternate;
+  animation-play-state:var(--prism-play-state,running);
+  will-change:transform,filter,opacity;
+}
+body.reference-site .hero.prism-hero-v2::after {
+  animation:ref-vector-drift 14s ease-in-out infinite alternate;
+  animation-play-state:var(--prism-play-state,running);
+}
+body.reference-site .hero .hero-signoff {
+  animation:ref-signoff-pulse 5s ease-in-out infinite;
+  animation-play-state:var(--prism-play-state,running);
+}
+body.reference-site .hero .hero-member-invite::before {
+  animation:ref-avatar-float 5.5s ease-in-out infinite;
+  animation-play-state:var(--prism-play-state,running);
+}
+body.reference-site .hero[data-prism-motion="still"]::before,
+body.reference-site .hero[data-prism-motion="still"]::after,
+body.reference-site .hero[data-prism-motion="still"] .hero-member-invite::before {
+  animation-play-state:paused;
+}
+@keyframes ref-hero-bloom {
+  0% { transform:scale(1) translate3d(-1.5%,0,0); filter:saturate(1) brightness(.92); opacity:.76; }
+  100% { transform:scale(1.08) translate3d(1.5%,-1%,0); filter:saturate(1.28) brightness(1.12); opacity:1; }
+}
+@keyframes ref-signoff-pulse {
+  0%,100% { text-shadow:0 0 0 transparent; }
+  50% { text-shadow:0 0 18px #75d3ff42; }
+}
+
+/* SCROLL / HERO PASS — keep the navigation legible over every section and
+   animate the coloured ribbons already present in the supplied hero artwork. */
+body.reference-site .site-header {
+  background:rgba(2,8,16,.86) !important;
+  border:1px solid #2b4158 !important;
+  box-shadow:0 18px 54px #000b, 0 0 0 1px #74d6ff10 inset !important;
+  backdrop-filter:blur(20px) saturate(1.15) !important;
+  -webkit-backdrop-filter:blur(20px) saturate(1.15);
+}
+body.reference-site .hero.prism-hero-v2::after {
+  background-image:url("assets/mmcrypto-vector.png");
+  background-size:cover;
+  background-position:44% 51%;
+  animation:ref-source-ribbon-drift 16s ease-in-out infinite alternate;
+  animation-play-state:var(--prism-play-state,running);
+  filter:saturate(1.14) contrast(1.06) brightness(1.03);
+}
+@keyframes ref-source-ribbon-drift {
+  0% {
+    background-position:44% 51%;
+    transform:scale(1.035) translate3d(-1.2%,0,0);
+  }
+  100% {
+    background-position:58% 47%;
+    transform:scale(1.095) translate3d(1.2%,-.8%,0);
+  }
+}
+body.reference-site .hero[data-prism-motion="still"]::after {
+  animation-play-state:paused;
+}
+@media (prefers-reduced-motion:reduce) {
+  body.reference-site .hero.prism-hero-v2::before,
+  body.reference-site .hero.prism-hero-v2::after,
+  body.reference-site .hero .hero-signoff,
+  body.reference-site .hero .hero-member-invite::before {
+    animation:none !important;
+  }
+}
