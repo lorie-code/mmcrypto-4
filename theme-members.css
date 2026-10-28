@@ -1,0 +1,301 @@
+/* Member and reading surfaces use graphite, with cyan reserved for actions and focus.
+   Partner onboarding is shown after website registration. */
+.member-hub,
+.member-dialog,
+.content-dialog {
+  color-scheme: dark;
+  color: var(--ink);
+  --member-border: #c4d6ed29;
+  --member-subtle: #ffffff05;
+  --member-copy: var(--muted-strong);
+  --member-error: #ffc0b4;
+  --member-success: #b1e5d0;
+}
+
+/* Member Hub and exchange cards. */
+.hub-badge {
+  color: var(--muted-strong);
+  border-color: var(--member-border);
+  background: #ffffff04;
+}
+.hub-card,
+.exchange-card {
+  color: var(--ink);
+  background: var(--surface);
+  border-color: var(--member-border);
+}
+.exchange-card:not(.exchange-card-example) {
+  background: var(--surface);
+  border-color: var(--member-border);
+}
+.exchange-card-example { background: var(--surface-soft); }
+.hub-exchange-grid { grid-template-columns: minmax(0, 1fr); }
+.exchange-card-featured { display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px 50px; padding: 34px; }
+.exchange-card-featured .exchange-card-top { grid-column: 1 / -1; }
+.exchange-card-featured .exchange-number { font-size: 9px; letter-spacing: 1px; }
+.exchange-logo { display: block; width: 156px; height: auto; margin: 8px 0 23px; }
+.exchange-name.sr-only { margin: 0; }
+.exchange-card-featured .exchange-detail { max-width: 430px; margin: 0; font-size: 13px; }
+.exchange-start { padding-left: 35px; border-left: 1px solid var(--line); }
+.exchange-start .exchange-invite { margin-top: 0; }
+.exchange-start .member-note { margin-top: 9px; }
+.exchange-start .exchange-actions { margin-top: 22px; }
+@media (max-width: 620px) {
+  .exchange-card-featured { grid-template-columns: 1fr; gap: 24px; padding: 25px; }
+  .exchange-start { padding: 22px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .exchange-logo { width: 140px; }
+}
+.exchange-number { color: var(--muted); }
+.exchange-name,
+.exchange-invite,
+.hub-onboarding-step strong { color: var(--ink); }
+.hub-association { background: var(--surface-raised); border-color: var(--member-border); }
+.hub-association .hub-status { color: var(--member-copy); }
+.hub-association[data-linked="true"] {
+  border-color: #83b5a070;
+  background: var(--surface-raised);
+}
+.hub-association[data-linked="true"] .hub-status { color: var(--member-success); }
+.hub-header p:not(.eyebrow),
+.hub-session > span:last-child,
+.hub-preview,
+.hub-card > p:not(.eyebrow):not(.member-note):not(.hub-status),
+.hub-onboarding-step p,
+.hub-exchange-intro,
+.exchange-detail,
+.member-hub .member-note,
+.hub-pending-row p { color: var(--muted); }
+.hub-preview strong,
+.hub-pending-row strong { color: var(--ink); }
+.hub-steps button > span:first-child { color: var(--muted); }
+.member-hub .member-text-button,
+.member-dialog .member-text-button,
+.member-hub .text-link,
+.member-dialog .text-link { color: var(--muted-strong); }
+.member-hub .member-text-button:hover,
+.member-dialog .member-text-button:hover,
+.member-hub .text-link:hover,
+.member-dialog .text-link:hover { color: var(--accent-text); }
+
+/* Keep the earlier single-partner component compatible with the same theme. */
+.hub-partner { color: var(--ink); background: var(--surface); border-color: var(--member-border); }
+.hub-partner .hub-badge { color: var(--muted-strong); border-color: var(--member-border); }
+.hub-partner .hub-card-header .eyebrow,
+.hub-partner .member-text-button { color: var(--muted-strong); }
+.hub-partner > p:not(.eyebrow):not(.member-note):not(.hub-status),
+.hub-partner .member-note { color: var(--muted); }
+.hub-partner .hub-status { color: var(--member-success); }
+.hub-referral { border-color: var(--line); }
+.hub-referral label { color: var(--member-copy); }
+
+/* Shared modal shells and restrained surface separation. */
+.member-dialog,
+.content-dialog {
+  background: var(--surface);
+  border-color: var(--member-border);
+  box-shadow: 0 30px 100px #00000085;
+}
+.member-dialog::backdrop,
+.content-dialog::backdrop { background: #030609c9; }
+.member-dialog-head,
+.content-dialog-header { background: var(--surface); border-color: var(--line); }
+.member-dialog-head .eyebrow { color: var(--muted); }
+.member-dialog-close,
+.content-close {
+  color: var(--ink);
+  background: transparent;
+  border-color: #c4d6ed38;
+}
+.member-dialog-close:hover,
+.content-close:hover,
+.content-done:hover { background: #ffffff06; border-color: #c4d6ed60; }
+.member-preview-note {
+  background: var(--surface-soft);
+  border-color: #c4d6ed50;
+  color: var(--muted-strong);
+}
+.member-preview-note strong { color: var(--ink); }
+.member-dialog .member-note,
+.auth-demo-code small { color: var(--muted); }
+.member-dialog .auth-field label,
+.member-dialog .auth-check,
+.link-referral label,
+.guide-copy { color: var(--member-copy); }
+.guide-copy strong,
+.guide-copy b,
+.link-invite-row strong,
+.auth-demo-code strong { color: var(--ink); }
+.guide-copy a { color: var(--muted-strong); }
+.guide-copy a:hover { color: var(--accent-text); }
+
+/* Compact email authentication and its clearly labeled sample code. */
+.auth-switch { border-color: var(--line); }
+.auth-switch p { color: var(--muted); }
+.auth-demo-code { background: var(--surface-soft); border-color: var(--member-border); }
+.auth-demo-code span { color: var(--ink); }
+
+/* Every form state remains legible on the dark surface. */
+.auth-field input,
+.hub-link-row input,
+.link-referral .hub-link-row input {
+  background: var(--surface-soft);
+  color: var(--ink);
+  border-color: #c4d6ed40;
+  caret-color: var(--accent-light);
+}
+.auth-field input::placeholder,
+.hub-link-row input::placeholder { color: #8995a4; opacity: 1; }
+.auth-field input:hover,
+.hub-link-row input:hover { border-color: #c4d6ed68; }
+.auth-field input:focus-visible,
+.hub-link-row input:focus-visible { border-color: var(--accent); outline-color: var(--accent-light); }
+.auth-field input[aria-invalid="true"] { border-color: #f2ad9c; background: #2a1c23; }
+.auth-field input:disabled { background: var(--surface-soft); color: var(--muted); border-color: var(--line); }
+.auth-field input:-webkit-autofill,
+.auth-field input:-webkit-autofill:hover,
+.auth-field input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--ink);
+  -webkit-box-shadow: 0 0 0 1000px var(--surface-soft) inset;
+  caret-color: var(--accent-light);
+}
+.auth-field input:autofill { color: var(--ink); background: var(--surface-soft); }
+.auth-check input { accent-color: var(--accent); }
+.auth-check input:focus-visible { outline-color: var(--accent-light); }
+.auth-error { color: var(--member-error); }
+
+/* Actions use a single primary treatment throughout the account flow. */
+.member-hub .button-dark,
+.member-hub .button-weex,
+.member-dialog .button-dark,
+.member-dialog .button-weex {
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
+}
+.member-hub .button-dark:hover,
+.member-hub .button-weex:hover,
+.member-dialog .button-dark:hover,
+.member-dialog .button-weex:hover {
+  background: var(--accent-hover);
+  color: var(--on-accent);
+  border-color: var(--accent-hover);
+}
+.exchange-actions .button:not(.button-dark),
+.hub-actions .button:not(.button-dark):not(.button-weex),
+.hub-link-row .button,
+.link-referral .hub-link-row .button,
+#link-open-exchange {
+  color: var(--ink);
+  background: transparent;
+  border-color: #c4d6ed40;
+}
+.exchange-actions .button:not(.button-dark):hover,
+.hub-actions .button:not(.button-dark):not(.button-weex):hover,
+.hub-link-row .button:hover,
+.link-referral .hub-link-row .button:hover,
+#link-open-exchange:hover {
+  color: var(--accent-text);
+  background: #ffffff04;
+  border-color: var(--accent);
+}
+
+/* Exchange attribution, including every possible verification result. */
+.link-progress li { color: var(--muted); border-color: var(--line); }
+.link-progress li > span { color: var(--muted); }
+.link-progress li[aria-current="step"] { color: var(--ink); border-color: var(--accent); }
+.link-progress li[aria-current="step"] > span { color: var(--accent-light); }
+.link-progress li.is-complete { color: var(--member-success); border-color: #83b5a080; }
+.link-progress li.is-complete > span { color: var(--member-success); }
+.link-progress li.is-complete > span::after {
+  content: "\2713";
+  display: inline-block;
+  margin-left: 8px;
+  font: 500 12px/1 var(--sans);
+  vertical-align: middle;
+}
+.link-explanation,
+.link-invite-row > span { color: var(--muted); }
+.link-fixtures { background: var(--surface-soft); border-color: var(--member-border); }
+.link-fixture { color: var(--member-copy); background: var(--surface-soft); }
+.link-fixtures .link-fixture { background: transparent; }
+.link-fixture strong { color: var(--ink); }
+.link-result:not(:empty),
+.link-result[data-state="error"],
+.link-result[data-state="invitation_mismatch"],
+.link-result[data-state="not_found"] {
+  color: var(--member-error);
+  background: #2d1e24;
+  border-color: #f2ad9c;
+}
+.link-result[data-state="matched"],
+.link-result[data-state="success"] {
+  color: var(--member-success);
+  background: #162620;
+  border-color: #83b5a0;
+}
+.link-result[data-state="loading"] {
+  color: var(--muted-strong);
+  background: var(--surface-raised);
+  border-color: #8995a4;
+}
+.link-result[data-state="unavailable"] {
+  color: #ffe0a6;
+  background: #2b261e;
+  border-color: #d9b976;
+}
+
+/* A settled confirmation remains visible until the member chooses to continue. */
+.link-success { padding: 3px 0 4px; text-align: center; }
+.link-success-icon {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 24px;
+  border: 1px solid #83b5a070;
+  border-radius: 50%;
+  color: var(--member-success);
+  background: radial-gradient(circle at 38% 30%, #b9dccc1f, #83b5a00b 76%);
+}
+.link-success-icon svg { display: block; width: 34px; height: 34px; }
+.link-success > .eyebrow { color: var(--member-success); letter-spacing: 1.4px; }
+.link-success h3 { font-size: clamp(27px, 5vw, 34px); line-height: 1.2; margin: 12px 0 14px; }
+.link-success h3:focus-visible { outline: 1px solid var(--accent); outline-offset: 6px; }
+.link-success-message { max-width: 440px; margin: 0 auto; color: var(--member-copy); font-size: 12px; line-height: 1.8; }
+.link-success-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  margin: 25px 0 24px;
+  padding: 19px 20px;
+  gap: 18px 22px;
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+  text-align: left;
+}
+.link-success-details > div { min-width: 0; }
+.link-success-details dt { margin-bottom: 7px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.link-success-details dd { margin: 0; color: var(--ink); font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+.link-success .button { width: 100%; min-height: 48px; }
+@media (max-width: 440px) {
+  .link-success-icon { width: 66px; height: 66px; margin-bottom: 20px; }
+  .link-success-icon svg { width: 30px; height: 30px; }
+  .link-success-details { grid-template-columns: minmax(0, 1fr); padding: 17px; gap: 16px; }
+  .link-success-details > div + div { border-top: 1px solid var(--line); padding-top: 14px; }
+}
+
+/* Reading room: the article is a calm continuation of the site. */
+.content-dialog .content-title,
+.content-note-section h3 { color: var(--ink); }
+.content-attribution,
+.content-dialog .content-eyebrow,
+.content-note-section h3 > span { color: var(--muted-strong); }
+.content-lede { color: var(--muted-strong); }
+.content-note-section p,
+.content-exercise > p:not(.content-eyebrow),
+.content-checklist { color: var(--member-copy); }
+.content-exercise { background: var(--surface-soft); border-color: var(--member-border); }
+.content-checklist li::before { border-color: #c4d6ed70; }
+.content-learning-scope { color: var(--muted); }
+.content-done { color: var(--ink); border-color: #c4d6ed40; background: transparent; }
+.content-next { color: var(--muted-strong); }
+.content-next:hover { color: var(--accent-text); }

@@ -1,0 +1,30 @@
+/* Scoped recovery UI for the click-to-load video dialog. */
+#video-frame { overflow: hidden; isolation: isolate; }
+#video-frame .mm-player-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .28; }
+#video-frame .mm-player-mount { position: absolute; inset: 0; z-index: 1; }
+#video-frame .mm-player-overlay { position: absolute; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 28px; text-align: center; background: linear-gradient(180deg, #11170d59, #11170dbd); }
+#video-frame .mm-player-message { display: block; font-size: clamp(18px, 2.5vw, 27px); line-height: 1.2; letter-spacing: -.7px; color: var(--paper); }
+#video-frame .mm-player-help { max-width: 380px; margin-top: 12px; font-size: 12px; line-height: 1.6; color: #d1d8c8; }
+#video-frame .mm-player-spinner { width: 31px; height: 31px; margin-bottom: 20px; border: 2px solid #e3e8dc38; border-top-color: var(--orange); border-radius: 50%; animation: mm-player-spin 1s linear infinite; }
+#video-frame .mm-player-recovery { display: flex; align-items: center; gap: 18px; margin-top: 23px; }
+#video-frame .mm-player-external { min-height: 44px; padding: 11px 16px; font-size: 12px; }
+#video-frame .mm-player-retry { background: transparent; color: var(--paper); border-bottom: 1px solid #929c82; padding: 8px 0; font-size: 12px; }
+#video-frame .mm-player-retry:hover { color: var(--weex); border-color: var(--weex); }
+#video-frame[data-state="unavailable"] .mm-player-spinner { display: none; }
+#video-frame:is([data-state="ready"], [data-state="playing"]) .mm-player-overlay,
+#video-frame:is([data-state="ready"], [data-state="playing"]) .mm-player-poster { display: none; }
+#video-frame:not([data-state="ready"]):not([data-state="playing"]) .mm-player-mount { opacity: 0; pointer-events: none; }
+@keyframes mm-player-spin { to { transform: rotate(360deg); } }
+@media (max-width: 599px) {
+  #video-frame { min-height: 225px; }
+  #video-frame .mm-player-overlay { padding: 20px 16px; }
+  #video-frame .mm-player-message { font-size: 18px; }
+  #video-frame .mm-player-help { font-size: 10px; max-width: 250px; margin-top: 8px; }
+  #video-frame .mm-player-spinner { width: 25px; height: 25px; margin-bottom: 15px; }
+  #video-frame .mm-player-recovery { margin-top: 17px; gap: 15px; }
+  #video-frame .mm-player-external { font-size: 10px; min-height: 40px; padding: 10px 12px; }
+  #video-frame .mm-player-retry { font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #video-frame .mm-player-spinner { animation: none; }
+}

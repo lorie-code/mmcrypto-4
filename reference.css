@@ -1,0 +1,1115 @@
+/* MMCrypto reference direction — editorial black, electric blue and violet ribbons.
+   This stylesheet is intentionally isolated to .reference-site. */
+:root {
+  color-scheme: dark;
+  --ref-bg:#030407;
+  --ref-panel:#090d14;
+  --ref-panel-2:#0d131e;
+  --ref-line:#1b2533;
+  --ref-text:#f4f7fb;
+  --ref-muted:#8d9aae;
+  --ref-dim:#536174;
+  --ref-blue:#2b9cff;
+  --ref-cyan:#71d8ff;
+  --ref-violet:#876aff;
+  --ref-pink:#d96dfd;
+  --ref-font:"Avenir Next","Inter","Segoe UI",Arial,sans-serif;
+}
+html:has(body.reference-site){background:var(--ref-bg);scroll-behavior:smooth}
+body.reference-site{background:var(--ref-bg);color:var(--ref-text);font-family:var(--ref-font);overflow-x:hidden}
+body.reference-site::before{content:"";position:fixed;inset:0;z-index:-20;pointer-events:none;background-image:linear-gradient(#ffffff03 1px,transparent 1px),linear-gradient(90deg,#ffffff03 1px,transparent 1px);background-size:96px 96px;mask-image:linear-gradient(to bottom,#000 0%,transparent 65%);opacity:.4}
+body.reference-site::after{content:"";position:fixed;inset:-20%;z-index:-21;pointer-events:none;background:radial-gradient(ellipse at 64% 9%,#1956b514,transparent 33%),radial-gradient(ellipse at 20% 48%,#3f2eb30c,transparent 44%);filter:blur(18px)}
+body.reference-site ::selection{background:#72d8ff;color:#03111e}
+body.reference-site .wrap{width:min(1120px,calc(100% - 88px))}
+body.reference-site .site-header{top:16px;width:min(1148px,calc(100% - 42px));margin:15px auto 0;border:1px solid #263548;background:#070a0fb8;border-radius:999px;box-shadow:0 20px 70px #000a,0 0 0 1px #83cfff08 inset;backdrop-filter:blur(24px);z-index:20}
+body.reference-site .header-inner{height:70px;width:calc(100% - 44px)}
+body.reference-site .brand-logo{width:162px;filter:brightness(1.2) saturate(.7)}
+body.reference-site #site-nav{color:#9eabbc;gap:24px;font-size:10px}
+body.reference-site #site-nav a:hover,body.reference-site #site-nav .nav-signin:hover,body.reference-site #site-nav a[aria-current="location"]{color:var(--ref-cyan)}
+body.reference-site #site-nav a[aria-current="location"]::after{background:var(--ref-blue);box-shadow:0 0 13px var(--ref-blue)}
+body.reference-site .header-cta{border:1px solid #6dcfff;background:linear-gradient(100deg,#1c8df2,#685cff);box-shadow:0 8px 26px #2c93ff33;color:#fff}
+body.reference-site .header-cta:hover{background:linear-gradient(100deg,#47b9ff,#9484ff);color:#fff}
+body.reference-site #reading-progress{background:linear-gradient(90deg,#2e9fff,#8270ff,#ed81ff)}
+body.reference-site .mobile-cta{background:#080c13e8;border-top:1px solid #263548;backdrop-filter:blur(18px)}
+
+/* Hero: generous editorial title with a luminous ribbon field behind the portrait. */
+body.reference-site .hero.prism-hero-v2{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:0 62px;align-items:center;min-height:722px;padding:90px 0 62px;position:relative;isolation:isolate;overflow:visible}
+body.reference-site .hero.prism-hero-v2::before{content:"";position:absolute;z-index:-4;inset:-90px -20vw -90px -18vw;pointer-events:none;background:radial-gradient(ellipse at 68% 57%,#276dff3b 0 11%,transparent 33%),radial-gradient(ellipse at 78% 55%,#0eb8ff1b,transparent 45%),radial-gradient(ellipse at 51% 50%,#8d4bff20,transparent 50%),linear-gradient(170deg,transparent 37%,#05080e 55%)}
+body.reference-site .hero.prism-hero-v2::after{content:"";position:absolute;z-index:-3;inset:-10px -20vw -36px -18vw;pointer-events:none;opacity:.9;background:url("assets/mmcrypto-ribbon-field.svg") center/cover no-repeat,radial-gradient(ellipse at 74% 50%,#287dff44,transparent 52%);filter:blur(1px);transform:rotate(-5deg) translate(2%,3%);mask-image:linear-gradient(90deg,transparent 5%,#000 38%,#000 86%,transparent 100%)}
+body.reference-site .hero.prism-hero-v2 .prism-hero-wordmark{left:auto;right:-2%;bottom:-11px;color:transparent;-webkit-text-stroke:1px #4b9cff20;font-size:clamp(88px,13vw,190px);letter-spacing:-.09em;opacity:.9}
+body.reference-site .hero .hero-copy{display:flex;flex-direction:column;position:relative;z-index:5;width:auto}
+body.reference-site .hero .hero-kicker{order:1;justify-content:flex-start;gap:15px;margin:0 0 28px;color:#7e91aa;font-size:9px;letter-spacing:2px}
+body.reference-site .hero .hero-kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ref-cyan);box-shadow:0 0 0 6px #2ba7ff20,0 0 21px #50cfff}
+body.reference-site .hero .hero-kicker span{padding:5px 10px;border:1px solid #2f4860;border-radius:999px;color:#8ba5c0;font-size:8px}
+body.reference-site .hero h1{order:2;max-width:670px;margin:0 0 24px;text-align:left;color:#fff;font-size:clamp(68px,7.3vw,111px);font-weight:520;line-height:.89;letter-spacing:-.09em;white-space:normal;text-shadow:0 2px 42px #4aa5ff13}
+body.reference-site .hero h1 br{display:block}
+body.reference-site .hero h1 em{display:inline-block;margin-top:13px;background:linear-gradient(104deg,#e9f5ff 3%,#70d7ff 34%,#907aff 72%,#e88dff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;color:transparent;font-weight:500}
+body.reference-site .hero h1::after{content:"";display:block;width:13px;height:13px;margin:26px 0 0 7px;border:2px solid var(--ref-cyan);border-radius:50%;box-shadow:10px -10px 0 -4px var(--ref-violet),19px 1px 0 -5px #f18fff;filter:drop-shadow(0 0 8px #55cfff)}
+body.reference-site .hero .hero-intro{order:3;max-width:414px;padding:0;margin:0;color:#a7b4c3;font-size:clamp(14px,1.2vw,17px);line-height:1.72}
+body.reference-site .hero .hero-intro br{display:none}
+body.reference-site .hero .hero-actions{order:4;display:flex;flex-direction:row;align-items:center;gap:22px;margin-top:29px}
+body.reference-site .hero .hero-actions .button{min-width:170px;min-height:48px;padding:14px 20px;border:1px solid #6fcfff;border-radius:999px;background:linear-gradient(100deg,#178bf1,#745fff);color:#fff;box-shadow:0 12px 35px #258dff35}
+body.reference-site .hero .hero-actions .button:hover{background:linear-gradient(100deg,#45baff,#a186ff);transform:translateY(-3px)}
+body.reference-site .hero .hero-browse{color:#9caec3;font-size:10px;gap:9px}
+body.reference-site .hero .hero-browse .icon{width:30px;height:30px;padding:9px;color:var(--ref-cyan);border:1px solid #4b7898;background:#091725;border-radius:50%}
+body.reference-site .hero .hero-member-invite{order:6;max-width:335px;margin:20px 0 0}
+body.reference-site .hero .hero-member-invite p{color:#657991;font-size:9px;line-height:1.75}
+body.reference-site .hero .hero-signoff{order:5;margin:28px 0 0;gap:12px}
+body.reference-site .hero .hero-signoff .signoff-rule{width:30px;height:2px;border-radius:99px;background:linear-gradient(90deg,#2d9bff,#b16fff)}
+body.reference-site .hero .hero-signoff strong{color:#c5d4e4;font-size:12px}
+body.reference-site .hero .hero-signoff span:not(.signoff-rule){color:#6d8299;font-size:8px}
+body.reference-site .hero .hero-visual{position:relative;grid-column:2;grid-row:1;top:auto;right:auto;bottom:auto;width:auto;height:578px;min-width:0;z-index:2;transform:translate3d(var(--prism-shift-x,0px),var(--prism-shift-y,0px),0);pointer-events:none}
+body.reference-site .hero .hero-visual figcaption,body.reference-site .hero .hero-visual figcaption a{pointer-events:auto}
+body.reference-site .hero .prism-sculpture{display:none}
+body.reference-site .hero .hero-visual::before{content:"";display:block;position:absolute;z-index:-1;inset:12% -8% 14% -6%;border:1px solid #55baff42;border-radius:50%;transform:rotate(-15deg);box-shadow:0 0 0 18px #378bff0c,0 0 90px #448dff30;animation:ref-orbit 18s linear infinite;animation-play-state:var(--prism-play-state,running)}
+body.reference-site .hero .hero-visual::after{content:"";position:absolute;z-index:4;top:9%;right:10%;width:12px;height:12px;border-radius:50%;background:#ec84ff;box-shadow:0 0 0 8px #ed82ff1f,0 0 28px #da6dff;animation:ref-dot 8s ease-in-out infinite;animation-play-state:var(--prism-play-state,running)}
+@keyframes ref-orbit{to{transform:rotate(345deg)}}
+@keyframes ref-dot{0%,100%{transform:translateY(4px)}50%{transform:translate(-24px,42px)}}
+body.reference-site .hero .hero-photo{aspect-ratio:1.23;border:1px solid #5daeff66;border-radius:25px;background:#08111c;box-shadow:0 18px 65px #000b,0 0 0 12px #2a7bff08,0 0 80px #279cff25;overflow:hidden}
+body.reference-site .hero .hero-photo::before{content:"";position:absolute;z-index:2;inset:0;background:linear-gradient(125deg,#07111c55,transparent 44%,#1f70ff3d),linear-gradient(0deg,#02030780,transparent 32%);pointer-events:none}
+body.reference-site .hero .hero-photo img{object-position:50% 51%;filter:saturate(1.05) contrast(1.08);transform:scale(1.01);transition:transform 1.3s ease}
+body.reference-site .hero .hero-photo:hover img{transform:scale(1.06)}
+body.reference-site .portrait-index{left:19px;top:19px;color:#d8e9fb;background:#06111ee8;border:1px solid #79c7ff59;border-radius:20px;font-size:8px;letter-spacing:1.4px;padding:8px 12px}
+body.reference-site .hero-visual figcaption,body.reference-site .hero-visual figcaption a{pointer-events:auto}
+body.reference-site .hero-visual figcaption{margin-top:14px;color:#72869c;font-size:8px;letter-spacing:1px}
+body.reference-site .hero-visual figcaption a{color:#9cb1c7;font-size:9px}
+body.reference-site .hero-visual figcaption .icon{color:var(--ref-cyan)}
+
+/* Proof + ticker */
+body.reference-site .proof-strip{gap:0;background:#080d15c9;border:1px solid #1c2b3b;border-radius:1px;padding:27px 32px;margin-bottom:38px;box-shadow:0 20px 60px #0006}
+body.reference-site .proof-strip > *{border-color:#233244;padding-left:34px}
+body.reference-site .proof-strip strong{font:500 33px/1 var(--ref-font);letter-spacing:-1.4px;color:#eff6ff}
+body.reference-site .proof-strip strong span{color:var(--ref-cyan)}
+body.reference-site .proof-strip p{font-size:9px;margin-top:9px;color:#71859b}
+body.reference-site .proof-statement .eyebrow{color:#67ccff;font-size:8px}
+body.reference-site .proof-statement p{font:500 15px/1.38 var(--ref-font);color:#c6d3e3;margin-top:6px}
+body.reference-site .ticker-shell{padding:16px 0;border-color:#1c2938;background:#05080d;overflow:hidden}
+body.reference-site .ticker-track > span{font-size:9px;color:#768da6;letter-spacing:3px;font-weight:500}
+body.reference-site .ticker-track b{color:#599fff;padding-inline:38px}
+body.reference-site .ticker-shell button{background:#05080d;color:#77d2ff;border-color:#294c6d;box-shadow:0 0 18px 15px #05080d}
+
+/* Story is one dark, full-width chapter module with a horizontal media window. */
+body.reference-site #story.story-journey{background:#06090e;color:var(--ref-text);padding:112px 0 92px;overflow:hidden;border-top:1px solid #172331;border-bottom:1px solid #172331}
+body.reference-site #story.story-journey::before{background:radial-gradient(ellipse at 88% 16%,#4e37ff18,transparent 52%),radial-gradient(ellipse at 12% 84%,#0ea2ff12,transparent 55%)}
+body.reference-site #story .journey-heading,body.reference-site #story .journey-carousel,body.reference-site #story .journey-closing{max-width:1120px}
+body.reference-site .journey-heading{display:flex;align-items:flex-end;gap:70px;justify-content:space-between;margin-bottom:37px}
+body.reference-site .journey-heading h2{font-size:clamp(40px,4.2vw,60px);max-width:640px;color:#f3f8ff;font-weight:520;letter-spacing:-2.8px}
+body.reference-site .journey-heading h2 em{color:var(--ref-cyan);background:none;-webkit-text-fill-color:currentColor}
+body.reference-site .journey-heading .eyebrow{font-size:9px;color:#5dbaff;margin-bottom:21px}
+body.reference-site .journey-intro{max-width:300px;margin:0 0 5px}.reference-site .journey-intro>p{font:400 14px/1.8 var(--ref-font);color:#9eafc2}.reference-site .journey-intro>span{color:#5e7188;font-size:10px;line-height:1.7}
+body.reference-site .journey-nav{border:0;gap:0;margin-bottom:16px;padding:0;display:flex}
+body.reference-site .journey-tab,body.reference-site .journey-tab:first-child{flex:1;padding:14px 17px;min-height:52px;border:1px solid #223245;border-bottom-color:#223245;background:#080d15;border-radius:0;align-items:center;gap:10px;color:#7e93a9;transition:background .3s,border-color .3s,box-shadow .3s}
+body.reference-site .journey-tab:first-child{border-radius:10px 0 0 0}.reference-site .journey-tab:last-child{border-radius:0 10px 0 0}
+body.reference-site .journey-tab>span{font:500 11px/1 var(--ref-font);color:#506983}.reference-site .journey-tab>b{font-size:10px;font-weight:500}.reference-site .journey-tab[aria-selected="true"]{background:linear-gradient(90deg,#102946,#131c42);color:#fff;border-color:#2e9fff;box-shadow:0 -5px 26px #258dff18 inset}.reference-site .journey-tab[aria-selected="true"]>span{color:#77d7ff}.reference-site .journey-tab:hover:not([aria-selected="true"]){color:#cae4ff;border-color:#34536f}
+body.reference-site .journey-window{height:560px;border-radius:0 0 13px 13px;background:#080c13;border:1px solid #26374b;box-shadow:0 20px 65px #0008}
+body.reference-site .journey-chapter{background:#080c13}.reference-site .journey-chapter::before,.reference-site .journey-chapter[data-journey-chapter="1"]::before,.reference-site .journey-chapter[data-journey-chapter="2"]::before{background:radial-gradient(ellipse at 9% 100%,#2e7cf318,transparent 65%);opacity:1}
+body.reference-site .journey-chapter-photo .journey-copy{width:55%;height:100%;padding:40px 44px 42px;margin:0;scrollbar-color:#286fb6 transparent}
+body.reference-site .journey-chapter-meta{gap:12px;margin-bottom:25px;color:#5cb8ff}.reference-site .journey-chapter-meta>span{font:600 11px/1 var(--ref-font);padding:8px;background:#0d2238;border-radius:8px;color:#7dd6ff}.reference-site .journey-chapter-meta>p{font-size:8px;letter-spacing:1.4px;color:#66819c}
+body.reference-site .journey-chapter h3,body.reference-site .journey-chapter-photo h3{font:500 clamp(28px,2.9vw,42px)/1.12 var(--ref-font);color:#f0f6ff;letter-spacing:-1.6px;margin-bottom:22px}
+body.reference-site .journey-copy>p,body.reference-site .journey-chapter-photo .journey-copy>p{font-size:12px;line-height:1.9;color:#9aabba}.reference-site .journey-tags{gap:7px;margin-top:23px;font-size:8px;color:#85cdfd}.reference-site .journey-tags>span{border:1px solid #26415b;background:#0b1725;border-radius:20px;padding:5px 10px}
+body.reference-site .journey-photo{inset:20px 20px 20px 55%;border-radius:10px;overflow:hidden;background:#111827}.reference-site .journey-photo::after{background:linear-gradient(0deg,#03060cd9,transparent 34%),linear-gradient(90deg,#02050c50,transparent 60%)}.reference-site .journey-photo img{filter:saturate(1.08) contrast(1.06)}.reference-site .journey-photo figcaption{color:#dcecff;font-size:8px}.reference-site .journey-photo figcaption a{color:#8bd8ff}
+body.reference-site .journey-controls{border:0;gap:26px;min-height:76px;padding:15px 0}.reference-site .journey-gesture,.reference-site .journey-reading{color:#637990;font-size:9px}.reference-site .journey-progress-track{height:3px;border-radius:3px;background:#1b2b3d}.reference-site #journey-progress{background:linear-gradient(90deg,#319eff,#956bff);box-shadow:none}.reference-site .journey-reading b{color:#71ccff}.reference-site .journey-arrows button{border:1px solid #27435f;background:#08121f;color:#75d0ff;width:42px;height:42px;box-shadow:0 4px 16px #0005}.reference-site .journey-arrows button:hover{background:#123150}
+body.reference-site .journey-closing{margin-top:20px;border-top:1px solid #1e2c3d;padding-top:27px}.reference-site .journey-closing .eyebrow{font-size:8px;color:#5a7b99}.reference-site .journey-closing p{font:500 20px/1.5 var(--ref-font);color:#a7bbce;letter-spacing:-.4px}.reference-site .journey-closing p em{color:#70cfff}.reference-site .journey-closing .text-link{color:#74ceff;border-color:#2c587d}
+
+/* Content: dark editorial library with blue/ultraviolet cards. */
+body.reference-site .video-section{background:#030508}
+body.reference-site .section{padding-block:112px}.reference-site .section-number{color:#67caff}.reference-site .section-heading{margin-bottom:30px}.reference-site .section-heading h2{color:#f4f8ff;font-weight:520}.reference-site .section-heading h2 em{color:#6dcfff;background:none;-webkit-text-fill-color:currentColor}.reference-site .content-section-actions .text-link{padding:12px 18px;border:1px solid #28435d;border-radius:40px;background:#08131f;color:#9fdaff;font-size:10px}.reference-site .content-section-jump{color:#71869e;font-size:10px}.reference-site .content-section-jump:hover{color:#72d2ff}.reference-site .research-intro{max-width:710px;color:#8297ad;font-size:13px;line-height:1.85}.reference-site .video-library-caption{padding:23px 0;border-color:#1b2b3e;margin-top:27px}.reference-site .video-library-caption>span{color:#66caff;font-size:8px}.reference-site .video-library-caption>p{color:#7d8ea3;font-size:10px}.reference-site .video-library-caption>p span{color:#446a8b}
+body.reference-site .video-section .video-library-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.reference-site .video-section .research-video-card{border:1px solid #1a2a3a;border-radius:12px;overflow:hidden;background:#080d14;box-shadow:0 18px 50px #0008;transition:transform .35s,box-shadow .35s,border-color .35s}.reference-site .video-section .research-video-card:hover{transform:translateY(-6px);border-color:#398dca;box-shadow:0 24px 58px #1e76bf30}.reference-site .research-thumb{border:0;box-shadow:none;background:#081320;aspect-ratio:1.77;margin:7px 7px 0;border-radius:7px}.reference-site .research-thumb::after{background:linear-gradient(135deg,#0e61a521,transparent 48%,#9a6aff2a)}.reference-site .research-play{left:15px;bottom:14px;width:37px;height:37px;color:#06203b;background:#7bd9ff;box-shadow:0 4px 16px #0008}.reference-site .research-thumb:hover .research-play{background:#fff;color:#208ef1}.reference-site .research-duration{border-radius:20px;color:#d8ecff;background:#030a14dd;font-size:8px;padding:5px 9px;right:11px;bottom:13px}.reference-site .video-section .library-card-body{padding:22px 23px 23px}.reference-site .library-meta{color:#65bfff;font-size:8px;letter-spacing:1px}.reference-site .research-section .library-card h3{font:600 20px/1.22 var(--ref-font);letter-spacing:-.6px;margin:12px 0 14px;color:#e8f3ff}.reference-site .library-description{font-size:11px;line-height:1.8;color:#8296aa}.reference-site .library-origin{color:#597188;font-size:8px;line-height:1.7}.reference-site .library-action{font-size:10px;font-weight:600;color:#78d4ff;margin-top:20px}.reference-site .library-action:hover{color:#d28aff}.reference-site .source-note,.reference-site .video-section .research-source-note{font-size:9px;color:#5b7289;line-height:1.8}
+body.reference-site .articles-section{position:relative;background:#070c14;border:0;border-radius:0;overflow:hidden}.reference-site .articles-section::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 82% 12%,#6b49ff16,transparent 45%),linear-gradient(90deg,#0d67ff05,transparent 45%);pointer-events:none}.reference-site .articles-heading-note{font:400 18px/1.5 var(--ref-font);color:#7d8ea3}.reference-site .articles-heading-note em{color:#73d1ff}.reference-site .articles-section .library-filters{border:0;gap:9px;align-items:center;margin-top:0;padding:0}.reference-site .library-filter{padding:9px 16px;border:1px solid #233a51;border-radius:50px;background:#0b1623;color:#8098ae;font-size:10px;min-height:40px;margin:0;line-height:1.4;gap:9px}.reference-site .library-filter[aria-pressed="true"]{background:#12345a;color:#a6e4ff;border-color:#4aaeff;box-shadow:0 0 22px #258dff25}.reference-site .library-count{color:#53bcff}.reference-site .library-results{color:#668198;font-size:10px}.reference-site .article-library-grid{gap:0;border-top:1px solid #1e3042;border-bottom:1px solid #1e3042}.reference-site .article-library-grid .library-card{border:0;border-bottom:1px solid #1e3042;background:transparent;border-radius:0;padding:22px 0;display:grid;grid-template-columns:110px minmax(0,1fr);gap:25px;transition:background .3s,padding .3s}.reference-site .article-library-grid .library-card:hover{background:#0d1d2d55;padding-inline:18px}.reference-site .article-index{color:#4f86ae}.reference-site .article-index span:first-child{font-size:22px;color:#65c9ff}.reference-site .article-index span:last-child{font-size:8px;color:#53728c}.reference-site .article-library-grid .library-card-body{padding:0}.reference-site .article-library-grid h3{margin:3px 0 7px;font-size:21px;color:#e6f2ff}.reference-site .article-library-grid .library-description{max-width:700px;color:#8096aa}.reference-site .article-library-grid .library-action{margin-top:10px}.reference-site .articles-source-note{color:#5c748a}
+/* Life and social close in the same dark editorial language. */
+body.reference-site .health-section{background:#04070c;border-top:1px solid #152534}.reference-site .health-intro h2{color:#f2f8ff}.reference-site .health-intro h2 em{color:#75d3ff}.reference-site .health-intro p{color:#8097ad}.reference-site .health-grid{border:1px solid #25384b;background:#080e16}.reference-site .health-photo{border-right:1px solid #25384b}.reference-site .health-photo::after{background:linear-gradient(0deg,#02050bdc,transparent 45%),linear-gradient(135deg,#148dff24,transparent 40%)}.reference-site .health-photo-link{color:#b2d7f4}.reference-site .health-card{background:linear-gradient(140deg,#0d1928,#09101b 65%,#10142b)}.reference-site .health-brand,.reference-site .health-card p,.reference-site .health-values{color:#91a8bd}.reference-site .health-brand strong,.reference-site .health-card h3 span{color:#76d4ff}.reference-site .health-card h3{color:#eff7ff}.reference-site .health-pill{border-color:#2d658e;color:#72cfff}.reference-site .health-values{border-color:#264258}.reference-site .health-card .button{background:linear-gradient(100deg,#218ff3,#775eff);border:0}.reference-site .health-video-link{color:#76d0ff}.reference-site .connect-section{background:#050a11;border-top:1px solid #172636}.reference-site .connect-section h2{color:#f1f7ff}.reference-site .connect-section h2 em{color:#75d4ff}.reference-site .connect-intro{color:#768da4}.reference-site .social-card{border-color:#1f3449;background:#080f18;box-shadow:0 15px 48px #0006}.reference-site .social-card:hover{background:#0f2236;border-color:#4dafff;box-shadow:0 20px 52px #1c8cf633}.reference-site .social-card h3{color:#eff7ff}.reference-site .social-card p,.reference-site .social-card span{color:#7d96ac}.reference-site .social-icon{color:#78d2ff}.reference-site .social-icon.youtube{color:#ff5f73}.reference-site .social-icon.instagram{color:#ed81ff}.reference-site .social-icon.telegram{color:#66caff}.reference-site .collaboration-note{border-color:#233a50}.reference-site .collaboration-note p{color:#9bb1c5}.reference-site .collaboration-note .text-link{color:#75d3ff}
+body.reference-site .site-footer{background:#03060a;border-top:1px solid #162636}.reference-site .footer-top,.reference-site .footer-bottom{color:#71879e}.reference-site .back-top{color:#75d3ff}.reference-site .footer-wordmark{border-color:#1a2b3d}.reference-site .footer-brand-logo{filter:brightness(1.28) saturate(.75);opacity:.68}.reference-site .legal{color:#4f667d}
+/* Re-assert the night palette after the bright base theme's higher-specificity rules. */
+body.reference-site .video-section .video-library-grid .research-video-card,
+body.reference-site .video-section .video-library-grid .research-video-card .library-card-body { background:#080d14; color:var(--ref-text); }
+body.reference-site .video-section .video-library-grid .research-video-card h3 { color:#e8f3ff; }
+body.reference-site .video-section .video-library-grid .research-video-card .library-description { color:#8296aa; }
+body.reference-site .video-section .video-library-grid .research-video-card .library-origin { color:#597188; }
+body.reference-site .video-section .video-library-grid .research-video-card .library-action { color:#78d4ff; border-color:#20364b; }
+body.reference-site .articles-section .article-library-grid { display:flex; flex-direction:column; gap:0; }
+body.reference-site .articles-section .article-library-grid .library-card { display:grid; grid-template-columns:110px minmax(0,1fr); border:0; border-bottom:1px solid #1e3042; border-radius:0; background:transparent; box-shadow:none; color:var(--ref-text); }
+body.reference-site .articles-section .article-library-grid .library-card h3 { color:#e6f2ff; background:none; -webkit-text-fill-color:currentColor; }
+body.reference-site .articles-section .article-library-grid .library-card .library-description { color:#8096aa; }
+body.reference-site .articles-section .article-library-grid .library-card .library-origin { color:#597188; }
+body.reference-site .articles-section .article-library-grid .library-card .library-action { color:#78d4ff; border-color:#20364b; }
+body.reference-site .articles-section::before { content:""; position:absolute; inset:0; background:radial-gradient(ellipse at 82% 12%,#6b49ff16,transparent 45%),linear-gradient(90deg,#0d67ff05,transparent 45%); pointer-events:none; }
+body.reference-site .health-section .health-grid { border:1px solid #25384b; background:#080e16; }
+body.reference-site .health-section .health-card { background:linear-gradient(140deg,#0d1928,#09101b 65%,#10142b); color:#eaf4ff; }
+body.reference-site .health-section .health-card h3 { color:#eff7ff; background:none; -webkit-text-fill-color:currentColor; }
+body.reference-site .health-section .health-card p,body.reference-site .health-section .health-values { color:#91a8bd; }
+body.reference-site .connect-section .social-card { border-color:#1f3449; background:#080f18; color:#eff7ff; }
+body.reference-site .connect-section { background:#050a11; border-top:1px solid #172636; }
+body.reference-site .connect-section .social-card h3 { color:#eff7ff; }
+body.reference-site .connect-section .social-card p,body.reference-site .connect-section .social-card span { color:#7d96ac; }
+body.reference-site .connect-section .collaboration-note { background:linear-gradient(105deg,#0b1c2a,#111435 55%,#25143a); border:1px solid #29445b; box-shadow:0 18px 46px #0007; }
+body.reference-site .connect-section .collaboration-note p { color:#d9eaff; }
+body.reference-site .connect-section .collaboration-note .text-link { color:#7bd4ff; }
+body.reference-site .site-footer { position:relative; overflow:hidden; background:#02070d; }
+body.reference-site .site-footer::before { content:""; position:absolute; inset:35% -20% -50%; pointer-events:none; background:radial-gradient(ellipse at 50% 80%,#00cfff38,transparent 55%),linear-gradient(180deg,transparent 20%,#001c2c 100%); }
+body.reference-site .site-footer > .wrap { position:relative; z-index:1; }
+body.reference-site .footer-wordmark { border-color:#1d4258; background:linear-gradient(180deg,#06131d,#003042); border-radius:24px 24px 0 0; box-shadow:0 -20px 80px #00bff518 inset; }
+body.reference-site .footer-wordmark:has(.footer-brand-logo) { display:flex; align-items:flex-end; min-height:235px; padding:0 16px; margin:44px 0 30px; overflow:hidden; }
+body.reference-site .footer-brand-logo { width:100%; max-width:none; height:auto; transform:translateY(13%); filter:brightness(1.8) saturate(1.2); opacity:.86; }
+
+/* Preserve dialogs and onboarding behavior but carry the night palette through. */
+body.reference-site dialog{background:#0b121d;color:#e9f4ff;border:1px solid #2a435c;box-shadow:0 30px 100px #000e}.reference-site dialog::backdrop{background:#000b;backdrop-filter:blur(8px)}.reference-site .member-dialog-head{border-color:#24394c}.reference-site .member-dialog-body,.reference-site .auth-field label{color:#93a9be}.reference-site input,.reference-site textarea{background:#060b12;border-color:#28435c;color:#ecf6ff}.reference-site .button-dark{background:linear-gradient(100deg,#208ff1,#765eff);border-color:#54baff}.reference-site .member-text-button,.reference-site .text-link{color:#76d2ff}
+@media (max-width:900px){body.reference-site .wrap{width:min(100% - 40px,680px)}body.reference-site .site-header{width:calc(100% - 20px)}body.reference-site .hero.prism-hero-v2{grid-template-columns:1fr;min-height:0;padding-top:74px}.reference-site .hero .hero-visual{grid-column:1;grid-row:2;height:420px;margin-top:35px}.reference-site .hero .hero-copy{grid-column:1}.reference-site .proof-strip{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.reference-site .proof-strip>*{padding-left:18px}.reference-site .journey-heading{display:block}.reference-site .journey-intro{margin-top:24px}.reference-site .journey-window{height:680px}.reference-site .journey-photo{inset:18px 18px auto 18px;height:260px}.reference-site .journey-chapter-photo .journey-copy{width:auto;height:calc(100% - 295px);padding:310px 25px 30px}.reference-site .video-section .video-library-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){body.reference-site .wrap{width:calc(100% - 32px)}body.reference-site .hero h1{font-size:clamp(57px,16vw,85px)}.reference-site .hero .hero-actions{flex-wrap:wrap}.reference-site .proof-strip{display:block;padding:20px}.reference-site .proof-strip>*{padding:13px 0;border-left:0;border-top:1px solid #233244}.reference-site .proof-strip>*:first-child{border-top:0}.reference-site .journey-nav{overflow-x:auto}.reference-site .journey-tab{flex:0 0 128px}.reference-site .journey-window{height:720px}.reference-site .journey-chapter-photo .journey-copy{padding:310px 20px 20px}.reference-site .video-section .video-library-grid{grid-template-columns:1fr}.reference-site .article-library-grid .library-card{grid-template-columns:65px minmax(0,1fr);gap:14px}.reference-site .article-library-grid h3{font-size:18px}.reference-site .health-grid{display:block}.reference-site .health-photo{border-right:0;border-bottom:1px solid #25384b}.reference-site .social-grid{grid-template-columns:1fr 1fr}}
+
+/* -------------------------------------------------------------------------
+   Reference board alignment — the supplied UI is a centred editorial canvas:
+   a quiet pill nav, a ribbon-only hero, compact proof rail, six-up media
+   library, numbered reading list and a large cyan footer wordmark.  Keep the
+   content and interactions above intact; these rules only lock composition.
+   ------------------------------------------------------------------------- */
+
+body.reference-site .site-header { width:min(1120px,calc(100% - 64px)); margin:20px auto 0; border:0; background:transparent; box-shadow:none; backdrop-filter:none; }
+body.reference-site .header-inner { width:100%; height:52px; gap:26px; }
+body.reference-site .brand { margin-right:auto; }
+body.reference-site .brand-logo { width:132px; filter:brightness(1.7) saturate(.6); }
+body.reference-site #site-nav { display:inline-flex; align-items:center; gap:0; padding:6px 8px 6px 14px; color:#161a23; background:#f5f7fb; border:1px solid #c9d6e6; border-radius:999px; box-shadow:0 8px 28px #0008; font-size:9px; letter-spacing:.1px; }
+body.reference-site #site-nav a,body.reference-site #site-nav .nav-signin { color:#283241; padding:8px 11px; }
+body.reference-site #site-nav a:hover,body.reference-site #site-nav .nav-signin:hover,body.reference-site #site-nav a[aria-current="location"] { color:#1269d8; }
+body.reference-site #site-nav a[aria-current="location"]::after { display:none; }
+body.reference-site .header-cta { min-height:32px; padding:9px 17px; border:1px solid #39baf6; background:linear-gradient(100deg,#168eea,#159bd7); border-radius:999px; box-shadow:0 8px 24px #188dd755; font-size:9px; }
+
+/* Hero composition: text sits over an expansive light-ribbon field. The
+   portrait remains as a small editorial marker so no content is discarded. */
+body.reference-site .hero.prism-hero-v2 { display:block; min-height:674px; padding:158px 0 48px; position:relative; isolation:isolate; overflow:visible; }
+body.reference-site .hero.prism-hero-v2::before { inset:-120px -30vw -86px -30vw; background:radial-gradient(ellipse at 73% 52%,#087eff3d 0 8%,transparent 33%),radial-gradient(ellipse at 58% 58%,#8a2dff25,transparent 43%),linear-gradient(175deg,transparent 40%,#020407 79%); }
+body.reference-site .hero.prism-hero-v2::after { inset:-25px -32vw -85px -28vw; opacity:.94; background:url("assets/mmcrypto-ribbon-field.svg") center 53% / cover no-repeat; filter:saturate(1.24) contrast(1.1) blur(.35px); transform:none; mask-image:linear-gradient(90deg,transparent 4%,#000 30%,#000 90%,transparent 100%); }
+body.reference-site .hero .hero-copy { display:block; width:min(540px,54%); }
+body.reference-site .hero .hero-kicker { margin:0 0 25px; font-size:8px; letter-spacing:1.8px; }
+body.reference-site .hero .hero-kicker span { padding:4px 9px; font-size:7px; }
+body.reference-site .hero h1 { max-width:560px; margin:0 0 28px; font-size:clamp(64px,7.1vw,102px); line-height:.91; letter-spacing:-.085em; }
+body.reference-site .hero h1::after { width:10px; height:10px; margin-top:22px; }
+body.reference-site .hero .hero-intro { max-width:330px; padding-left:63px; color:#b1bfce; font-size:11px; line-height:1.78; }
+body.reference-site .hero .hero-signoff { position:absolute; top:166px; right:0; margin:0; z-index:5; }
+body.reference-site .hero .hero-signoff strong { font-size:11px; }
+body.reference-site .hero .hero-signoff span:not(.signoff-rule) { font-size:7px; }
+body.reference-site .hero .hero-actions { margin-top:25px; gap:17px; }
+body.reference-site .hero .hero-actions .button { min-width:138px; min-height:39px; padding:11px 16px; font-size:9px; }
+body.reference-site .hero .hero-browse { font-size:9px; }
+body.reference-site .hero .hero-browse .icon { width:26px; height:26px; padding:7px; }
+body.reference-site .hero .hero-member-invite { display:none; }
+body.reference-site .hero .hero-visual { position:absolute; inset:0; width:100%; height:100%; z-index:1; pointer-events:none; }
+body.reference-site .hero .hero-visual::before { display:none; }
+body.reference-site .hero .hero-visual::after { top:31%; right:8%; width:8px; height:8px; }
+body.reference-site .hero .prism-sculpture { display:none; }
+body.reference-site .hero .hero-photo { position:absolute; left:0; top:372px; width:46px; height:46px; aspect-ratio:1; border:1px solid #8ed8ff66; border-radius:9px; box-shadow:0 8px 24px #000b,0 0 0 4px #258dff12; pointer-events:auto; }
+body.reference-site .hero .hero-photo img { object-position:50% 50%; filter:saturate(1.1) contrast(1.08); }
+body.reference-site .hero .portrait-index,body.reference-site .hero .hero-visual figcaption { display:none; }
+
+body.reference-site .proof-strip { display:grid; grid-template-columns:1fr 1fr 1fr 1.5fr; width:min(1120px,calc(100% - 88px)); padding:22px 0; margin-bottom:0; border:0; border-top:1px solid #1b2d40; border-bottom:1px solid #1b2d40; border-radius:0; background:transparent; box-shadow:none; }
+body.reference-site .proof-strip > * { min-height:48px; padding-left:26px; border-color:#203347; }
+body.reference-site .proof-strip > *:first-child { padding-left:0; border-left:0; }
+body.reference-site .proof-strip strong { font-size:27px; }
+body.reference-site .proof-strip p { margin-top:7px; font-size:8px; }
+body.reference-site .proof-statement p { font-size:12px; }
+
+body.reference-site #story.story-journey { padding:96px 0 76px; }
+body.reference-site .journey-heading { margin-bottom:30px; }
+body.reference-site .journey-heading h2 { font-size:clamp(39px,4vw,56px); }
+body.reference-site .journey-window { height:520px; border-radius:0; box-shadow:0 24px 78px #0009; }
+body.reference-site .journey-chapter-photo .journey-copy { padding:36px 40px; }
+body.reference-site .journey-photo { inset:18px 18px 18px 55%; border-radius:0; }
+
+/* Video board: six equal editorial cards, square corners and quiet rules. */
+body.reference-site .video-section .video-library-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+body.reference-site .video-section .research-video-card { border:0; border-top:1px solid #253649; border-radius:0; background:#050a10; box-shadow:none; }
+body.reference-site .video-section .research-video-card:hover { transform:translateY(-4px); border-color:#4bbaff; box-shadow:0 18px 40px #087eff25; }
+body.reference-site .research-thumb { margin:0; border-radius:0; aspect-ratio:1.76; }
+body.reference-site .video-section .library-card-body { padding:17px 2px 19px; }
+body.reference-site .research-section .library-card h3 { margin:10px 0 9px; font-size:18px; line-height:1.16; }
+body.reference-site .library-description { font-size:10px; line-height:1.72; }
+body.reference-site .library-origin { margin-top:14px; }
+body.reference-site .library-action { margin-top:13px; }
+
+/* Articles follow the reference's long numbered rows rather than cards. */
+body.reference-site .articles-section { background:#030407; border-radius:0; }
+body.reference-site .articles-section .section-heading { margin-bottom:24px; }
+body.reference-site .articles-heading-note { font-size:13px; line-height:1.55; }
+body.reference-site .articles-section .library-filters { margin-bottom:17px; }
+body.reference-site .library-filter { padding:7px 12px; min-height:32px; font-size:8px; }
+body.reference-site .article-library-grid { border-top:1px solid #1d3042; border-bottom:1px solid #1d3042; }
+body.reference-site .articles-section .article-library-grid .library-card { position:relative; grid-template-columns:74px minmax(0,1fr); gap:22px; min-height:104px; padding:19px 0; border-bottom:1px solid #1d3042; }
+body.reference-site .articles-section .article-library-grid .library-card:last-child { border-bottom:0; }
+body.reference-site .article-index span:first-child { font-size:26px; }
+body.reference-site .article-library-grid .library-card-body { min-width:0; padding:0; }
+body.reference-site .article-library-grid h3 { margin:4px 0 6px; font-size:17px; }
+body.reference-site .article-library-grid .library-description { max-width:650px; font-size:10px; }
+body.reference-site .article-library-grid .library-origin { position:absolute; right:0; bottom:18px; margin:0; font-size:7px; }
+body.reference-site .article-library-grid .library-action { position:absolute; top:20px; right:0; width:auto; min-height:0; display:inline-flex; margin:0; padding:0; border:0; font-size:8px; }
+
+/* Bottom lock-up: teal panel and a large cropped MMCrypto logo. */
+body.reference-site .site-footer { padding-top:55px; background:#02080d; }
+body.reference-site .site-footer::before { inset:25% -25% -30%; background:radial-gradient(ellipse at 50% 75%,#00cfff42,transparent 58%),linear-gradient(180deg,transparent 15%,#003342 100%); }
+body.reference-site .footer-wordmark { height:250px; display:flex; align-items:flex-end; margin:58px 0 0; padding:0; border:1px solid #0c5467; border-bottom:0; border-radius:18px 18px 0 0; overflow:hidden; background:linear-gradient(180deg,#03151e,#005068 88%,#00a8d1); box-shadow:0 -24px 90px #00cdf025 inset; }
+body.reference-site .footer-brand-logo { width:112%; max-width:none; margin-left:-6%; transform:translateY(12%); filter:brightness(2.25) saturate(1.2) contrast(1.05); opacity:.9; }
+
+@media (max-width:900px) {
+  body.reference-site .site-header { width:calc(100% - 28px); }
+  body.reference-site .hero.prism-hero-v2 { min-height:670px; padding-top:136px; }
+  body.reference-site .hero .hero-copy { width:68%; }
+  body.reference-site .hero .hero-signoff { top:140px; right:3%; }
+  body.reference-site .hero .hero-photo { top:387px; }
+  body.reference-site .proof-strip { width:calc(100% - 40px); }
+  body.reference-site .journey-window { height:620px; }
+}
+@media (max-width:600px) {
+  body.reference-site .site-header { margin-top:10px; }
+  body.reference-site #site-nav { display:none; }
+  body.reference-site .brand-logo { width:128px; }
+  body.reference-site .hero.prism-hero-v2 { min-height:650px; padding-top:120px; }
+  body.reference-site .hero .hero-copy { width:100%; }
+  body.reference-site .hero .hero-signoff { position:relative; top:auto; right:auto; margin:0 0 16px; }
+  body.reference-site .hero h1 { font-size:clamp(56px,15vw,80px); }
+  body.reference-site .hero .hero-intro { max-width:285px; padding-left:58px; font-size:10px; }
+  body.reference-site .hero .hero-photo { top:372px; width:42px; height:42px; }
+  body.reference-site .proof-strip { display:grid; grid-template-columns:1fr 1fr; gap:17px 0; padding:18px 0; }
+  body.reference-site .proof-strip > * { min-height:43px; padding-left:17px; }
+  body.reference-site .proof-strip > *:nth-child(odd) { padding-left:0; border-left:0; }
+  body.reference-site .proof-statement { grid-column:1 / -1; padding-top:15px; border-left:0; border-top:1px solid #203347; }
+  body.reference-site .video-section .video-library-grid { grid-template-columns:1fr; }
+  body.reference-site .articles-section .article-library-grid .library-card { grid-template-columns:56px minmax(0,1fr); gap:14px; min-height:128px; }
+  body.reference-site .article-library-grid .library-action { position:static; display:inline-flex; margin-top:10px; }
+  body.reference-site .article-library-grid .library-origin { position:static; margin-top:9px; }
+  body.reference-site .footer-wordmark { height:150px; }
+}
+
+/* Final source-of-truth overrides for the image logo edition. */
+body.reference-site .hero .hero-actions .button {
+  min-width:138px;
+  min-height:39px;
+  padding:11px 16px;
+  font-size:9px;
+}
+body.reference-site .footer-wordmark,
+body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+  width:calc(100vw - 16px);
+  min-height:260px;
+  height:clamp(260px,28vw,520px);
+  margin-left:calc(50% - 50vw + 8px);
+  margin-right:0;
+  margin-top:58px;
+  padding:0 3vw;
+  border-radius:20px 20px 0 0;
+  border:1px solid #1d657b;
+  border-bottom:0;
+  background:linear-gradient(180deg,#06131d 0%,#003042 72%,#00a8d1 100%);
+  box-shadow:0 -24px 90px #00cdf025 inset;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+}
+body.reference-site .footer-brand-logo {
+  display:block;
+  width:92%;
+  max-width:none;
+  height:auto;
+  margin:0 auto;
+  transform:translateY(22%);
+  color:initial;
+  background:none;
+  -webkit-text-fill-color:initial;
+  font-size:0;
+  filter:brightness(3.35) saturate(.8) contrast(1.14);
+  opacity:.95;
+}
+@media (max-width:600px) {
+  body.reference-site .footer-wordmark,
+  body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+    min-height:220px;
+    height:260px;
+    margin-left:8px;
+    margin-top:42px;
+    padding:0 12px;
+  }
+  body.reference-site .footer-brand-logo {
+    width:112%;
+    margin:0;
+    transform:translate(-6%,22%);
+  }
+}
+
+/* Keep the health/social close crisp while retaining the four-card editorial rhythm. */
+body.reference-site .social-card {
+  min-height: 188px;
+  background: linear-gradient(160deg, #0b1521, #070d15 78%);
+}
+body.reference-site .social-card:nth-child(1) { border-top: 1px solid #2f596f; }
+body.reference-site .social-card:nth-child(2) { border-top: 1px solid #4e4d77; }
+body.reference-site .social-card:nth-child(3) { border-top: 1px solid #5f4d70; }
+body.reference-site .social-card:nth-child(4) { border-top: 1px solid #31586d; }
+body.reference-site .health-card { box-shadow: inset 0 1px #77d7ff10; }
+
+@media (max-width:600px) {
+  body.reference-site .footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 8px 16px;
+  }
+  body.reference-site .footer-bottom > span { display: block; grid-column: 1/-1; }
+  body.reference-site .footer-bottom > a { text-align: right; }
+  body.reference-site .legal { max-width: 100%; }
+  body.reference-site .social-card { min-height: 164px; }
+}
+
+/* Final UI-art-direction pass: match the supplied one-column black editorial composition. */
+body.reference-site .site-header { width:min(1040px,calc(100% - 40px)); height:56px; }
+body.reference-site .header-inner { height:56px; width:calc(100% - 34px); }
+body.reference-site .brand-logo { width:122px; }
+body.reference-site #site-nav { gap:17px; font-size:9px; }
+body.reference-site .header-cta { display:inline-flex !important; min-height:30px; padding:8px 14px; font-size:8px; border-radius:999px; }
+body.reference-site .hero.prism-hero-v2 { display:block; min-height:650px; padding:92px 0 50px; }
+body.reference-site .hero .hero-copy { max-width:680px; min-height:500px; }
+body.reference-site .hero .hero-visual { display:none; }
+body.reference-site .hero h1 { font-size:clamp(60px,5.6vw,96px); line-height:.9; letter-spacing:-.085em; }
+body.reference-site .hero .hero-signoff { position:absolute; top:18px; right:0; margin:0; }
+body.reference-site .hero .hero-member-invite { display:grid; grid-template-columns:42px minmax(0,1fr); align-items:center; gap:11px; max-width:340px; margin-top:23px; }
+body.reference-site .hero .hero-member-invite::before { content:""; width:42px; height:42px; border-radius:9px; background:url("assets/chris-car-hero.png") center/cover; border:1px solid #65cfff88; box-shadow:0 0 22px #288eff35; }
+body.reference-site .hero .hero-member-invite p { margin:0; }
+body.reference-site .hero .hero-actions .button { background:#f6fbff; color:#06111b; border-color:#f6fbff; box-shadow:0 8px 24px #5cbfff28; }
+body.reference-site .hero .hero-actions .button:hover { background:#70d7ff; border-color:#70d7ff; color:#06111b; }
+body.reference-site .hero .hero-browse { color:#b9ccdf; }
+body.reference-site .proof-strip { background:transparent; border:0; border-radius:0; box-shadow:none; padding:22px 0; margin-bottom:0; }
+body.reference-site .proof-strip > * { padding-left:26px; }
+body.reference-site .ticker-shell { display:none; }
+body.reference-site #story.story-journey { padding-top:88px; }
+body.reference-site .journey-nav { border-bottom:1px solid #1a2c3e; }
+body.reference-site .journey-tab,body.reference-site .journey-tab:first-child { min-height:42px; padding:10px 0; border:0; border-bottom:1px solid transparent; border-radius:0; background:transparent; box-shadow:none; }
+body.reference-site .journey-tab[aria-selected="true"] { background:transparent; border-color:#45c5ff; box-shadow:0 5px 20px #258dff20; }
+body.reference-site .journey-window { height:520px; border-radius:2px; box-shadow:0 20px 60px #0009; }
+body.reference-site .journey-chapter { background:#05070b; }
+body.reference-site .journey-chapter::before { background:linear-gradient(90deg,#05070b 0%,#05070bf2 44%,#05070b00 70%); }
+body.reference-site .journey-chapter-photo .journey-copy { width:50%; padding:38px 40px; }
+body.reference-site .journey-chapter h3,body.reference-site .journey-chapter-photo h3 { font-size:clamp(28px,2.6vw,36px); }
+body.reference-site .journey-copy > p,body.reference-site .journey-chapter-photo .journey-copy > p { color:#a4b3c3; font-size:11px; line-height:1.82; }
+body.reference-site .journey-photo { left:50%; right:14px; top:14px; bottom:14px; border-radius:0; }
+body.reference-site .video-section .video-library-grid { grid-template-columns:repeat(3,minmax(0,1fr)) !important; grid-auto-flow:row; gap:18px; }
+body.reference-site .video-section .video-library-grid .research-video-card { grid-column:auto !important; grid-row:auto !important; min-height:0; border-radius:12px; box-shadow:0 12px 34px #0008; }
+body.reference-site .video-section .video-library-grid .research-thumb { aspect-ratio:1.77; }
+body.reference-site .articles-section .library-art { display:none !important; }
+body.reference-site .articles-section .article-library-grid .library-card { grid-template-columns:92px minmax(0,1fr); min-height:104px; padding:21px 0; }
+body.reference-site .articles-section .article-library-grid .article-index > span:first-child { font-size:24px; color:#7dcfff; }
+body.reference-site .articles-section .article-library-grid .library-card h3 { font-size:20px; margin:2px 0 7px; }
+body.reference-site .connect-section .collaboration-note { background:transparent; border:0; box-shadow:none; padding:18px 0 0; margin-top:18px; }
+body.reference-site .connect-section .collaboration-note p { color:#9db1c4; font-size:13px; }
+body.reference-site .footer-wordmark:has(.footer-brand-logo) { min-height:240px; border-radius:18px 18px 0 0; }
+body.reference-site .footer-brand-logo { width:108%; transform:translateY(16%); }
+@media (max-width:900px) {
+  body.reference-site .site-header { width:calc(100% - 20px); }
+  body.reference-site .hero.prism-hero-v2 { min-height:0; padding-top:74px; }
+  body.reference-site .hero .hero-copy { min-height:0; }
+  body.reference-site .hero .hero-signoff { position:static; margin:22px 0 0; }
+  body.reference-site .hero .hero-member-invite { margin-top:20px; }
+  body.reference-site .journey-window { height:680px; }
+  body.reference-site .journey-chapter-photo .journey-copy { width:auto; padding:310px 25px 30px; }
+  body.reference-site .journey-photo { left:18px; right:18px; top:18px; height:260px; bottom:auto; }
+  body.reference-site .video-section .video-library-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+}
+@media (max-width:600px) {
+  body.reference-site .site-header { height:52px; }
+  body.reference-site .header-inner { height:52px; }
+  body.reference-site .brand-logo { width:104px; }
+  body.reference-site #site-nav { gap:11px; font-size:8px; }
+  body.reference-site .header-cta { display:none !important; }
+  body.reference-site .hero h1 { font-size:clamp(57px,16vw,85px); }
+  body.reference-site .proof-strip { padding:16px 0; }
+  body.reference-site .video-section .video-library-grid { grid-template-columns:1fr !important; }
+  body.reference-site .articles-section .article-library-grid .library-card { grid-template-columns:62px minmax(0,1fr); }
+  body.reference-site .articles-section .article-library-grid .library-card h3 { font-size:18px; }
+  body.reference-site .footer-wordmark:has(.footer-brand-logo) { min-height:150px; }
+}
+
+/* The board uses one uninterrupted black reading list.  Remove the pastel
+   reading-card ornament inherited from prism.css so rows 04 and 05 match the
+   first three commentary rows. */
+body.reference-site .articles-section .research-reading-card,
+body.reference-site .articles-section .research-reading-card::before {
+  background: transparent;
+}
+body.reference-site .articles-section .research-reading-card::before { display:none; }
+
+/* Headings stay legible on the black canvas instead of inheriting bright-theme gradients. */
+body.reference-site .articles-section h2,
+body.reference-site .health-section h2,
+body.reference-site .connect-section h2 { color:#f4f7fb !important; background:none !important; -webkit-text-fill-color:currentColor !important; }
+body.reference-site .articles-section h2 em,
+body.reference-site .health-section h2 em,
+body.reference-site .connect-section h2 em { color:#a9c9df !important; background:none !important; -webkit-text-fill-color:currentColor !important; }
+body.reference-site .video-section h2 { color:#f4f7fb !important; background:none !important; -webkit-text-fill-color:currentColor !important; }
+body.reference-site .video-section h2 em { color:#a9c9df !important; background:none !important; -webkit-text-fill-color:currentColor !important; }
+body.reference-site .section-heading h2 { font-size:clamp(38px,4vw,56px); line-height:.98; letter-spacing:-1.8px; }
+body.reference-site .connect-section { position:relative; overflow:hidden; border-radius:22px 22px 0 0; background:radial-gradient(ellipse at 80% 10%,#00506b44,transparent 48%),linear-gradient(160deg,#061017,#02080e 70%); }
+body.reference-site .connect-section::before { content:""; position:absolute; inset:0; pointer-events:none; opacity:.35; background-image:linear-gradient(135deg,#0cd4ff12 1px,transparent 1px); background-size:22px 22px; mask-image:linear-gradient(180deg,#000,transparent 88%); }
+body.reference-site .connect-section > * { position:relative; z-index:1; }
+body.reference-site .site-footer { margin-top:-1px; background:radial-gradient(ellipse at 50% 100%,#00627a3a,transparent 58%),linear-gradient(180deg,#02080e,#00131d); }
+
+/* Keep the compact hamburger navigation closed until the visitor opens it. */
+@media (max-width:900px) {
+  body.reference-site #site-nav { display:none; position:absolute; top:68px; left:0; right:0; width:auto; margin:0; padding:22px 24px; flex-direction:column; gap:8px; background:#070b12f5; border:1px solid #26394d; border-radius:18px; box-shadow:0 22px 55px #000b; }
+  body.reference-site .nav-open #site-nav { display:flex; }
+  body.reference-site .menu-toggle { display:flex; margin-left:auto; width:34px; height:34px; border:1px solid #2d465c; border-radius:50%; align-items:center; justify-content:center; gap:5px; background:#0b121c; }
+  body.reference-site .menu-toggle span { background:#a8dfff; }
+}
+
+/* Keep the author sign-off pinned to the right edge of the hero canvas,
+   matching the reference board's asymmetric top line. */
+body.reference-site .hero .hero-copy { position:static; }
+
+/* Keep section titles legible on the black board after prism-bright.css is
+   loaded earlier in the cascade. */
+body.reference-site .section-heading h2,
+body.reference-site .articles-section h2,
+body.reference-site .health-intro h2,
+body.reference-site .connect-section h2 {
+  color:#f4f7fb !important;
+  background:none !important;
+  -webkit-text-fill-color:currentColor !important;
+}
+body.reference-site .section-heading h2 em,
+body.reference-site .articles-section h2 em,
+body.reference-site .health-intro h2 em,
+body.reference-site .connect-section h2 em {
+  color:#9edbff !important;
+  background:none !important;
+  -webkit-text-fill-color:currentColor !important;
+}
+body.reference-site #story.story-journey::after { display:none !important; }
+
+@media (min-width:901px) {
+  /* The reference board places the creator marker beside the intro, before
+     the CTA row; the membership copy remains available in the DOM but is
+     visually represented by the intro sentence in this composition. */
+  body.reference-site .hero .hero-member-invite {
+    position:absolute;
+    top:344px;
+    left:0;
+    width:46px;
+    height:46px;
+    display:block;
+    margin:0;
+  }
+  body.reference-site .hero .hero-member-invite::before { display:block; }
+  body.reference-site .hero .hero-member-invite p { display:none; }
+}
+
+/* The reference board keeps the story canvas uninterrupted.  prism-bright.css
+   adds a decorative spectrum rule to this pseudo-element; hide that inherited
+   accent for this edition so the chapter window flows into the black page. */
+body.reference-site #story.story-journey::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Final alignment pass against the supplied board.  The portrait marker is
+   anchored to the first line of the intro so it cannot drift when the hero
+   copy wraps at a different viewport width. */
+body.reference-site .hero .hero-member-invite { display:none !important; }
+body.reference-site .hero .hero-intro {
+  position:relative;
+  padding-left:63px;
+}
+body.reference-site .hero .hero-intro::before {
+  content:"";
+  position:absolute;
+  left:0;
+  top:4px;
+  width:42px;
+  height:42px;
+  border:1px solid #65cfff88;
+  border-radius:9px;
+  background:url("assets/chris-car-hero.png") center 48% / cover no-repeat;
+  box-shadow:0 0 22px #288eff35;
+}
+
+/* The board uses quiet text links and one white action pill; remove the
+   inherited bright-theme purple pills while preserving the blue nav CTA. */
+body.reference-site .content-section-actions .text-link {
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  color:#aebed0;
+  font-size:10px;
+}
+body.reference-site .journey-closing .text-link,
+body.reference-site .connect-section .collaboration-note .text-link {
+  min-height:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  color:#d8eaff;
+  font-size:10px;
+}
+body.reference-site .health-card .button.button-dark {
+  min-width:170px;
+  min-height:48px;
+  padding:14px 20px;
+  border:1px solid #f6fbff;
+  border-radius:999px;
+  background:#f6fbff;
+  color:#06111b;
+  box-shadow:0 8px 24px #5cbfff28;
+}
+body.reference-site .health-card .button.button-dark:hover {
+  background:#70d7ff;
+  border-color:#70d7ff;
+  color:#06111b;
+}
+
+/* The reference footer is a full-bleed cyan lock-up.  Its lower wordmark is
+   a large editorial title (MMCrypto), rather than the compact social logo. */
+body.reference-site .footer-wordmark,
+body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+  width:calc(100vw - 16px);
+  min-height:250px;
+  height:250px;
+  margin-left:calc(50% - 50vw + 8px);
+  margin-right:0;
+  padding:0;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+  border-radius:18px 18px 0 0;
+  border:1px solid #0c5467;
+  border-bottom:0;
+  background:linear-gradient(180deg,#03151e 0%,#005068 88%,#00a8d1 100%);
+  box-shadow:0 -24px 90px #00cdf025 inset;
+}
+body.reference-site .footer-brand-logo {
+  display:block;
+  width:calc(100% - 64px);
+  max-width:none;
+  margin:0 32px;
+  transform:translateY(16%);
+  color:transparent;
+  font:700 clamp(190px,20vw,360px)/.78 var(--ref-font);
+  letter-spacing:-.09em;
+  white-space:nowrap;
+  text-align:center;
+  background:linear-gradient(180deg,#f8fcff 3%,#d5e0e7 42%,#7893a2 86%);
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 5px 7px #00131d88);
+  opacity:1;
+}
+
+/* Social close is the other full-bleed panel in the board.  Keep its text
+   and four links on the same 1120px editorial rail as the rest of the page. */
+body.reference-site .connect-section {
+  width:calc(100% - 16px);
+  max-width:none;
+  margin-left:8px;
+  margin-right:8px;
+  padding-left:max(20px,calc((100% - 1120px) / 2));
+  padding-right:max(20px,calc((100% - 1120px) / 2));
+  box-sizing:border-box;
+}
+
+@media (max-width:600px) {
+  body.reference-site .hero .hero-intro { padding-left:58px; }
+  body.reference-site .hero .hero-intro::before { width:42px; height:42px; }
+  body.reference-site .footer-wordmark,
+  body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+    min-height:150px;
+    height:150px;
+    border-radius:14px 14px 0 0;
+  }
+  body.reference-site .footer-brand-logo {
+    width:calc(100% - 28px);
+    margin:0 14px;
+    font-size:clamp(110px,18vw,180px);
+  }
+  body.reference-site .connect-section {
+    width:calc(100% - 16px);
+    margin-left:8px;
+    margin-right:8px;
+    padding-left:16px;
+    padding-right:16px;
+  }
+}
+
+/* Final source-of-truth overrides for the image logo edition. */
+body.reference-site .hero .hero-actions .button {
+  min-width:138px;
+  min-height:39px;
+  padding:11px 16px;
+  font-size:9px;
+}
+body.reference-site .footer-wordmark,
+body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+  width:calc(100vw - 16px);
+  min-height:260px;
+  height:clamp(260px,28vw,520px);
+  margin-left:calc(50% - 50vw + 8px);
+  margin-right:0;
+  margin-top:58px;
+  padding:0 3vw;
+  border-radius:20px 20px 0 0;
+  border:1px solid #1d657b;
+  border-bottom:0;
+  background:linear-gradient(180deg,#06131d 0%,#003042 72%,#00a8d1 100%);
+  box-shadow:0 -24px 90px #00cdf025 inset;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+}
+body.reference-site .footer-brand-logo {
+  display:block;
+  width:92%;
+  max-width:none;
+  height:auto;
+  margin:0 auto;
+  transform:translateY(22%);
+  color:initial;
+  background:none;
+  -webkit-text-fill-color:initial;
+  font-size:0;
+  filter:brightness(3.35) saturate(.8) contrast(1.14);
+  opacity:.95;
+}
+@media (max-width:600px) {
+  body.reference-site .footer-wordmark,
+  body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+    min-height:220px;
+    height:260px;
+    margin-left:8px;
+    margin-top:42px;
+    padding:0 12px;
+  }
+  body.reference-site .footer-brand-logo {
+    width:112%;
+    margin:0;
+    transform:translate(-6%,22%);
+  }
+}
+
+/* Final alignment pass against the supplied board.  The small creator image
+   belongs beside the introductory copy; it should never fall below the CTA. */
+body.reference-site .hero.prism-hero-v2 .prism-hero-wordmark { display:none !important; }
+body.reference-site .hero .hero-copy { position:static; }
+body.reference-site .hero .hero-intro { padding-left:58px; }
+body.reference-site .hero .hero-member-invite {
+  position:absolute;
+  top:265px;
+  left:0;
+  width:46px;
+  height:46px;
+  display:block;
+  margin:0;
+  max-width:none;
+}
+body.reference-site .hero .hero-member-invite::before {
+  display:block;
+  width:46px;
+  height:46px;
+}
+body.reference-site .hero .hero-member-invite p { display:none; }
+
+/* Keep visible navigation links small and editorial, as in the reference.
+   Form and membership actions retain their stronger treatment elsewhere. */
+body.reference-site .hero .hero-actions .button {
+  min-width:138px;
+  min-height:39px;
+  padding:11px 16px;
+  font-size:9px;
+  background:#f6fbff;
+  color:#06111b;
+  border:1px solid #f6fbff;
+  box-shadow:0 8px 24px #5cbfff28;
+}
+body.reference-site .hero .hero-actions .button:hover {
+  background:#70d7ff;
+  border-color:#70d7ff;
+  color:#06111b;
+}
+body.reference-site .hero .hero-browse,
+body.reference-site .content-section-actions .text-link,
+body.reference-site .journey-closing .text-link,
+body.reference-site .health-video-link,
+body.reference-site .collaboration-note .text-link {
+  border:0;
+  background:transparent;
+  box-shadow:none;
+  padding:0;
+  color:#b9ccdf;
+  font-size:9px;
+}
+body.reference-site .content-section-actions .text-link {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  min-height:0;
+  color:#d8e8f7;
+}
+body.reference-site .content-section-actions .text-link:hover,
+body.reference-site .journey-closing .text-link:hover,
+body.reference-site .health-video-link:hover,
+body.reference-site .collaboration-note .text-link:hover { color:#76d2ff; }
+body.reference-site .health-card .button {
+  min-height:34px;
+  padding:9px 15px;
+  border-radius:999px;
+  font-size:9px;
+  background:#f6fbff;
+  color:#06111b;
+  border:1px solid #f6fbff;
+}
+
+/* The footer lock-up is a full-bleed board element.  The logo is scaled past
+   the panel edge so the lower crop matches the supplied composition. */
+body.reference-site .footer-wordmark {
+  width:100vw;
+  max-width:none;
+  min-height:260px;
+  height:clamp(260px,28vw,520px);
+  margin:58px 0 0 calc(50% - 50vw);
+  padding:0 3vw;
+  border-radius:20px 20px 0 0;
+  border:1px solid #1d657b;
+  border-bottom:0;
+  background:linear-gradient(180deg,#06131d 0%,#003042 72%,#00a8d1 100%);
+  box-shadow:0 -24px 90px #00cdf025 inset;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+}
+body.reference-site .footer-brand-logo {
+  width:92%;
+  max-width:none;
+  margin:0 auto;
+  transform:translateY(22%);
+  filter:brightness(3.35) saturate(.8) contrast(1.14);
+  opacity:.95;
+}
+body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+  width:100vw;
+  max-width:none;
+  min-height:260px;
+  height:clamp(260px,28vw,520px);
+  margin-top:58px;
+  margin-right:0;
+  margin-bottom:0;
+  margin-left:calc(50% - 50vw);
+}
+
+@media (max-width:900px) {
+  body.reference-site .hero .hero-member-invite { top:265px; }
+  body.reference-site .hero .hero-intro { padding-left:58px; }
+  body.reference-site .footer-wordmark { margin-top:42px; }
+}
+@media (min-width:901px) {
+  body.reference-site .hero .hero-member-invite { top:365px; }
+}
+@media (max-width:600px) {
+  body.reference-site .hero .hero-member-invite { top:255px; width:42px; height:42px; }
+  body.reference-site .hero .hero-member-invite::before { width:42px; height:42px; }
+  body.reference-site .hero .hero-intro { padding-left:54px; }
+  body.reference-site .footer-wordmark {
+    min-height:220px;
+    height:260px;
+    padding:0 12px;
+  }
+  body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+    min-height:220px;
+    height:260px;
+    margin-left:calc(50% - 50vw);
+  }
+  body.reference-site .footer-brand-logo { width:112%; transform:translate(-6%,22%); }
+}
+
+/* Reference-board corrections (final cascade): keep the thumbnail in the
+   intro's own coordinate system and render the footer wordmark as the large
+   mixed-case editorial lock-up from the supplied UI. */
+body.reference-site .hero .hero-member-invite { display:none !important; }
+body.reference-site .hero .hero-intro {
+  position:relative;
+  padding-left:63px;
+}
+body.reference-site .hero .hero-intro::before {
+  content:"";
+  position:absolute;
+  left:0;
+  top:4px;
+  width:42px;
+  height:42px;
+  border:1px solid #65cfff88;
+  border-radius:9px;
+  background:url("assets/chris-car-hero.png") center 48% / cover no-repeat;
+  box-shadow:0 0 22px #288eff35;
+}
+body.reference-site .hero .hero-actions .button,
+body.reference-site .health-card .button.button-dark {
+  min-height:48px;
+  padding:14px 20px;
+  border:1px solid #f6fbff;
+  border-radius:999px;
+  background:#f6fbff;
+  color:#06111b;
+  box-shadow:0 8px 24px #5cbfff28;
+}
+body.reference-site .hero .hero-actions .button:hover,
+body.reference-site .health-card .button.button-dark:hover {
+  background:#70d7ff;
+  border-color:#70d7ff;
+  color:#06111b;
+}
+body.reference-site .content-section-actions .text-link,
+body.reference-site .journey-closing .text-link,
+body.reference-site .connect-section .collaboration-note .text-link {
+  min-height:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  color:#d8eaff;
+  font-size:10px;
+}
+body.reference-site .footer-wordmark,
+body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+  width:calc(100vw - 16px);
+  min-height:250px;
+  height:250px;
+  margin-left:calc(50% - 50vw + 8px);
+  margin-right:0;
+  margin-top:58px;
+  padding:0;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+  border-radius:18px 18px 0 0;
+  border:1px solid #0c5467;
+  border-bottom:0;
+  background:linear-gradient(180deg,#03151e 0%,#005068 88%,#00a8d1 100%);
+  box-shadow:0 -24px 90px #00cdf025 inset;
+}
+body.reference-site .footer-brand-logo {
+  display:block;
+  width:calc(100% - 64px);
+  max-width:none;
+  height:auto;
+  margin:0 32px;
+  transform:translateY(16%);
+  color:transparent;
+  font:700 clamp(190px,20vw,360px)/.78 var(--ref-font);
+  letter-spacing:-.09em;
+  white-space:nowrap;
+  text-align:center;
+  background:linear-gradient(180deg,#fff 3%,#d5e0e7 42%,#7893a2 86%);
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 5px 7px #00131d88);
+  opacity:1;
+}
+body.reference-site .connect-section {
+  width:calc(100% - 16px);
+  max-width:none;
+  margin-left:8px;
+  margin-right:8px;
+  padding-left:max(20px,calc((100% - 1120px) / 2));
+  padding-right:max(20px,calc((100% - 1120px) / 2));
+  box-sizing:border-box;
+}
+@media (max-width:600px) {
+  body.reference-site .hero .hero-intro { padding-left:58px; }
+  body.reference-site .hero .hero-intro::before { width:42px; height:42px; }
+  body.reference-site .footer-wordmark,
+  body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+    width:calc(100vw - 16px);
+    min-height:150px;
+    height:150px;
+    margin-left:calc(50% - 50vw + 8px);
+    margin-top:42px;
+    border-radius:14px 14px 0 0;
+  }
+  body.reference-site .footer-brand-logo {
+    width:calc(100% - 28px);
+    margin:0 14px;
+    font-size:clamp(110px,18vw,180px);
+    transform:translateY(16%);
+  }
+  body.reference-site .connect-section {
+    width:calc(100% - 16px);
+    margin-left:8px;
+    margin-right:8px;
+    padding-left:16px;
+    padding-right:16px;
+  }
+}
+
+/* FINAL CASCADE — image brand lock-up and compact action sizing. */
+body.reference-site .hero .hero-actions .button {
+  min-width:138px;
+  min-height:39px;
+  padding:11px 16px;
+  font-size:9px;
+}
+body.reference-site .footer-wordmark,
+body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+  width:calc(100vw - 16px);
+  min-height:260px;
+  height:clamp(260px,28vw,520px);
+  margin-left:calc(50% - 50vw + 8px);
+  margin-right:0;
+  margin-top:58px;
+  padding:0 3vw;
+  border-radius:20px 20px 0 0;
+  border:1px solid #1d657b;
+  border-bottom:0;
+  background:linear-gradient(180deg,#06131d 0%,#003042 72%,#00a8d1 100%);
+  box-shadow:0 -24px 90px #00cdf025 inset;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+}
+body.reference-site .footer-brand-logo {
+  display:block;
+  width:92%;
+  max-width:none;
+  height:auto;
+  margin:0 auto;
+  transform:translateY(22%);
+  color:initial;
+  background:none;
+  -webkit-text-fill-color:initial;
+  font-size:0;
+  filter:brightness(3.35) saturate(.8) contrast(1.14);
+  opacity:.95;
+}
+@media (max-width:600px) {
+  body.reference-site .footer-wordmark,
+  body.reference-site .footer-wordmark:has(.footer-brand-logo) {
+    min-height:220px;
+    height:260px;
+    margin-left:8px;
+    margin-top:42px;
+    padding:0 12px;
+  }
+  body.reference-site .footer-brand-logo {
+    width:112%;
+    margin:0;
+    transform:translate(-6%,22%);
+  }
+}
+
+
+/* FINAL OVERRIDES — last in cascade for the reference-board edition. */
+body.reference-site .hero .hero-photo { display:none !important; }
+body.reference-site .hero .hero-intro::before {
+  top:50%;
+  transform:translateY(-50%);
+}
+body.reference-site .hero .hero-browse {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  min-height:39px;
+  padding:6px 12px 6px 8px;
+  border:1px solid #ffffff26;
+  border-radius:999px;
+  background:#05070b;
+  color:#f4f8ff;
+  box-shadow:0 8px 24px #0007;
+}
+body.reference-site .hero .hero-browse:hover {
+  color:#fff;
+  border-color:#70d7ff66;
+  background:#0a1420;
+}
+body.reference-site .hero .hero-browse .icon {
+  width:26px;
+  height:26px;
+  padding:7px;
+  border:0;
+  border-radius:50%;
+  background:#f6fbff;
+  color:#06111b;
+}
+body.reference-site .health-card .button.button-dark {
+  min-width:138px;
+  min-height:39px;
+  padding:11px 16px;
+  border:1px solid #f6fbff;
+  border-radius:999px;
+  background:#f6fbff;
+  color:#06111b;
+  box-shadow:0 8px 24px #5cbfff28;
+  font-size:9px;
+}
+body.reference-site .health-card .button.button-dark:hover {
+  background:#70d7ff;
+  border-color:#70d7ff;
+  color:#06111b;
+}
+body.reference-site .footer-brand-logo {
+  filter:brightness(1.45) saturate(1.15) contrast(1.08);
+  opacity:.95;
+}
+@media (max-width:600px) {
+  body.reference-site .hero .hero-browse {
+    min-height:36px;
+    padding:5px 10px 5px 7px;
+  }
+  body.reference-site .hero .hero-browse .icon {
+    width:24px;
+    height:24px;
+    padding:6px;
+  }
+}
+
+/* FINAL FOOTER LOCK-UP — match the supplied MMCrypto wordmark reference. */
+body.reference-site .footer-wordmark {
+  min-height:220px;
+  height:clamp(220px,22vw,420px);
+  padding:0 2.5vw;
+  align-items:flex-end;
+  overflow:hidden;
+  border:1px solid #1d7185;
+  border-bottom:0;
+  border-radius:18px 18px 0 0;
+  background:
+    radial-gradient(circle at 12% 16%, #26d6ed1d 0 1px, transparent 1.5px) 0 0 / 8px 8px,
+    linear-gradient(180deg,#06232c 0%,#003845 67%,#00b9df 100%);
+  box-shadow:0 -20px 75px #00d8f52b inset;
+}
+body.reference-site .footer-wordmark-text {
+  display:block;
+  width:100%;
+  margin:0 auto;
+  transform:translateY(0);
+  color:transparent;
+  font-family:"Avenir Next","Inter","Helvetica Neue",Arial,sans-serif;
+  font-size:clamp(150px,17vw,330px);
+  font-weight:800;
+  line-height:.78;
+  letter-spacing:-.085em;
+  text-align:center;
+  white-space:nowrap;
+  background:linear-gradient(180deg,#ffffff 2%,#f0f3f4 35%,#b8c8cf 69%,#86a8b4 100%);
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 4px 4px #00141c9c);
+}
+body.reference-site .footer-wordmark .footer-brand-logo { display:none !important; }
+@media (max-width:600px) {
+  body.reference-site .footer-wordmark {
+    min-height:170px;
+    height:190px;
+    padding:0 10px;
+    border-radius:14px 14px 0 0;
+  }
+  body.reference-site .footer-wordmark-text {
+    font-size:clamp(100px,18vw,180px);
+    transform:translateY(17%);
+  }
+}

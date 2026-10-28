@@ -1,0 +1,771 @@
+{
+  "project": "MMCRYPTO personal brand · Noir / Story6",
+  "language": "en",
+  "reviewedAt": "2026-10-14",
+  "profile": {
+    "source": "User-provided BD profile and website request form",
+    "publicName": "MMCRYPTO",
+    "fullName": "Christopher Jaszczyński",
+    "scope": "Personal biography, market perspectives, creator origin story, Dubai base, and health-oriented channel.",
+    "notes": [
+      "Proposed website copy is not a verbatim quotation from Christopher.",
+      "Health content describes personal interests and daily habits, not medical advice or treatment claims.",
+      "No investment performance, award, exact wealth figure, or charitable outcome is asserted without additional verification."
+    ]
+  },
+  "socialProfiles": {
+    "youtube": "https://www.youtube.com/@mmcryptotube",
+    "x": "https://x.com/mmcrypto",
+    "instagram": "https://www.instagram.com/chrismmcrypto/",
+    "health": "https://www.instagram.com/chrismmhealth/",
+    "telegram": "https://t.me/MMCrypto"
+  },
+  "channelSnapshot": {
+    "source": "https://www.youtube.com/@MMCryptoTube",
+    "observedAt": "2026-10-14",
+    "subscribersDisplayed": "619K",
+    "videosDisplayed": "1,846",
+    "notes": "Public official-channel figures observed during browser research. Counts change; these are dated snapshots, not live data, unique combined reach or evidence of investment performance."
+  },
+  "videos": [
+    {
+      "id": "5_N2EIMY1Ds",
+      "creator": "MMCrypto",
+      "creatorUrl": "https://www.youtube.com/@MMCryptoTube",
+      "originalTitle": "Bitcoin: enough is enough..",
+      "publishedAt": "2026-10-10",
+      "duration": "6:10",
+      "displayTitle": "The next market move",
+      "category": "Market outlook",
+      "synopsis": "A dated market update asking what could come next in crypto.",
+      "synopsisBasis": "The public description reads 'Bitcoin what now'. No more specific analytical claim is supported by this brief description.",
+      "descriptionExcerpt": "Bitcoin what now",
+      "sourceReliability": "Official verified channel; exact source title, date, creator and duration verified. Synopsis intentionally broad because the description is sparse.",
+      "assetKey": "market-update",
+      "localThumbnail": "assets/videos/market-update.webp",
+      "thumbnailSourceUrl": "https://i.ytimg.com/vi/5_N2EIMY1Ds/hq720.jpg?sqp=-oaymwFFCNAFEJQDSFryq4qpAzcIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGDQgWyhyMA-4AvcY&rs=AOn4CLDKe4hBDr4KEcyn6hN7JEAXQTm4xQ",
+      "thumbnailSize": [
+        720,
+        404
+      ],
+      "thumbnailKind": "YouTube channel preview thumbnail",
+      "thumbnailVisualReview": "Distinct original camera preview; no prominent coin name or logo observed.",
+      "watchUrl": "https://www.youtube.com/watch?v=5_N2EIMY1Ds",
+      "observedAt": "2026-10-14",
+      "source": "Official verified MMCrypto YouTube channel",
+      "placement": "Dedicated videos section (#watch)"
+    },
+    {
+      "id": "K_89rx_gsys",
+      "creator": "MMCrypto",
+      "creatorUrl": "https://www.youtube.com/@MMCryptoTube",
+      "originalTitle": "Bitcoin: my sad prediction..",
+      "publishedAt": "2026-07-02",
+      "duration": "9:42",
+      "displayTitle": "Cycles, outlook & execution",
+      "category": "Cycle analysis",
+      "synopsis": "A market outlook structured around cyclical analysis, a potential market bottom, and an execution and scaling plan.",
+      "synopsisBasis": "Visible chapter headings on the expanded source page.",
+      "descriptionExcerpt": "My final Bitcoin Prediction..",
+      "chapters": [
+        {
+          "time": "0:00",
+          "title": "Market outlook and strategy"
+        },
+        {
+          "time": "2:13",
+          "title": "Cyclical analysis"
+        },
+        {
+          "time": "4:56",
+          "title": "Market bottom prediction"
+        },
+        {
+          "time": "6:54",
+          "title": "Execution and scaling plan"
+        }
+      ],
+      "sourceReliability": "Official verified channel; exact title, date, creator, duration and visible chapter headings verified.",
+      "assetKey": "cycles-outlook",
+      "localThumbnail": "assets/videos/cycles-outlook.webp",
+      "thumbnailSourceUrl": "https://i.ytimg.com/vi/K_89rx_gsys/hq720.jpg?sqp=-oaymwFFCNAFEJQDSFryq4qpAzcIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA-4AvcY&rs=AOn4CLDIPm_izKeLzEGUI5XUDyzkRJtVbA",
+      "thumbnailSize": [
+        720,
+        404
+      ],
+      "thumbnailKind": "YouTube channel preview thumbnail",
+      "thumbnailVisualReview": "Distinct original camera preview; no prominent coin name or logo observed.",
+      "watchUrl": "https://www.youtube.com/watch?v=K_89rx_gsys",
+      "observedAt": "2026-10-14",
+      "source": "Official verified MMCrypto YouTube channel",
+      "placement": "Dedicated videos section (#watch)"
+    },
+    {
+      "id": "4jd3PfJR8B8",
+      "creator": "MMCrypto",
+      "creatorUrl": "https://www.youtube.com/@MMCryptoTube",
+      "originalTitle": "THE BRUTAL TRUTH ABOUT BITCOIN NOW…",
+      "publishedAt": "2026-04-30",
+      "duration": "7:45",
+      "displayTitle": "Charts, risk & the wider economy",
+      "category": "Technical analysis",
+      "synopsis": "An update connecting the state of the market with technical trade analysis, trading risks, and fiat inflation.",
+      "synopsisBasis": "Visible chapter headings on the expanded source page.",
+      "descriptionExcerpt": "Bitcoin what now!!?",
+      "chapters": [
+        {
+          "time": "0:00",
+          "title": "The state of the market"
+        },
+        {
+          "time": "2:06",
+          "title": "Technical analysis of trades"
+        },
+        {
+          "time": "4:29",
+          "title": "Trading risks and health"
+        },
+        {
+          "time": "5:42",
+          "title": "Fiat inflation and strategy"
+        }
+      ],
+      "sourceReliability": "Official verified channel; exact title, date, creator, duration and visible chapter headings verified.",
+      "assetKey": "charts-risk",
+      "localThumbnail": "assets/videos/charts-risk.webp",
+      "thumbnailSourceUrl": "https://i.ytimg.com/vi/4jd3PfJR8B8/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLBI_HAO7LxikBrYHk9NYqOCEulGow",
+      "thumbnailSize": [
+        720,
+        404
+      ],
+      "thumbnailKind": "YouTube channel preview thumbnail",
+      "thumbnailVisualReview": "Distinct original camera preview; no prominent coin name or logo observed.",
+      "watchUrl": "https://www.youtube.com/watch?v=4jd3PfJR8B8",
+      "observedAt": "2026-10-14",
+      "source": "Official verified MMCrypto YouTube channel",
+      "placement": "Dedicated videos section (#watch)"
+    },
+    {
+      "id": "xluYJHciCbA",
+      "creator": "MMCrypto",
+      "creatorUrl": "https://www.youtube.com/@MMCryptoTube",
+      "originalTitle": "Sorry, I made a big mistake… [Bitcoin & Oil]",
+      "publishedAt": "2026-03-27",
+      "duration": "10:11",
+      "displayTitle": "Mistakes, emotion & risk",
+      "category": "Trading psychology",
+      "synopsis": "A review of trading mistakes across crypto and oil, with sections on emotional decisions and adjusting a risk profile.",
+      "synopsisBasis": "No description was supplied; the synopsis derives from visible chapter headings.",
+      "descriptionExcerpt": null,
+      "chapters": [
+        {
+          "time": "0:00",
+          "title": "The big trading mistake"
+        },
+        {
+          "time": "1:00",
+          "title": "Emotional decision making"
+        },
+        {
+          "time": "2:20",
+          "title": "Bitcoin trade error"
+        },
+        {
+          "time": "3:36",
+          "title": "Mistakes in oil trading"
+        },
+        {
+          "time": "5:28",
+          "title": "Reopening trades and profit"
+        },
+        {
+          "time": "7:22",
+          "title": "Adjusting risk profile"
+        },
+        {
+          "time": "8:34",
+          "title": "Bitcoin outlook and conclusion"
+        }
+      ],
+      "sourceReliability": "Official verified channel; exact title, date, creator, duration and visible chapter headings verified. No profit claim is reproduced in the editorial synopsis.",
+      "assetKey": "emotion-risk",
+      "localThumbnail": "assets/videos/emotion-risk.webp",
+      "thumbnailSourceUrl": "https://i.ytimg.com/vi/xluYJHciCbA/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLB20Zklwwp0iTxdMjGaqwfsNnRF0Q",
+      "thumbnailSize": [
+        720,
+        404
+      ],
+      "thumbnailKind": "YouTube channel preview thumbnail",
+      "thumbnailVisualReview": "Distinct original camera preview; no prominent coin name or logo observed.",
+      "watchUrl": "https://www.youtube.com/watch?v=xluYJHciCbA",
+      "observedAt": "2026-10-14",
+      "source": "Official verified MMCrypto YouTube channel",
+      "placement": "Dedicated videos section (#watch)"
+    },
+    {
+      "id": "v2BqFM4lyQ8",
+      "creator": "MMCrypto",
+      "creatorUrl": "https://www.youtube.com/@MMCryptoTube",
+      "originalTitle": "BITCOIN & OIL: EXTREME WARNING!!!! [new Trades]",
+      "publishedAt": "2026-03-09",
+      "duration": "9:23",
+      "displayTitle": "Crypto & oil in focus",
+      "category": "Cross-market analysis",
+      "synopsis": "A cross-market review pairing oil-trade analysis with a technical crypto-market forecast.",
+      "synopsisBasis": "Visible description and chapter headings on the expanded source page.",
+      "descriptionExcerpt": "Bitcoin and WTI Crude Oil what now",
+      "chapters": [
+        {
+          "time": "0:00",
+          "title": "Market outlook and review"
+        },
+        {
+          "time": "2:34",
+          "title": "Oil trade analysis"
+        },
+        {
+          "time": "4:49",
+          "title": "Bitcoin trade and profits"
+        },
+        {
+          "time": "6:12",
+          "title": "Ethics and charitable plans"
+        },
+        {
+          "time": "7:08",
+          "title": "Bitcoin technical forecast"
+        }
+      ],
+      "sourceReliability": "Official verified channel; exact title, date, creator, duration, description and chapter headings verified. No profit or charitable-outcome claim is reproduced in editorial copy.",
+      "assetKey": "crypto-oil",
+      "localThumbnail": "assets/videos/crypto-oil.webp",
+      "thumbnailSourceUrl": "https://i.ytimg.com/vi/v2BqFM4lyQ8/hq720.jpg?sqp=-oaymwFFCNAFEJQDSFryq4qpAzcIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGE4gWShlMA-4AvcY&rs=AOn4CLDegpFgerehXTHz91OBxk70nkQyKg",
+      "thumbnailSize": [
+        720,
+        404
+      ],
+      "thumbnailKind": "YouTube channel preview thumbnail",
+      "thumbnailVisualReview": "Distinct original camera preview; no prominent coin name or logo observed.",
+      "watchUrl": "https://www.youtube.com/watch?v=v2BqFM4lyQ8",
+      "observedAt": "2026-10-14",
+      "source": "Official verified MMCrypto YouTube channel",
+      "placement": "Dedicated videos section (#watch)"
+    },
+    {
+      "id": "nJderKXCOhM",
+      "creator": "MMCrypto",
+      "creatorUrl": "https://www.youtube.com/@MMCryptoTube",
+      "originalTitle": "Davincij15 - ALTCOIN SPREADSHEET & HIS SECRET FORMULA!",
+      "publishedAt": "2019-01-05",
+      "dateLabel": "Premiere date",
+      "duration": "9:46",
+      "displayTitle": "A research conversation with Davincij15",
+      "category": "From the archive",
+      "synopsis": "An archived conversation focused on Davincij15's crypto spreadsheet and research formula.",
+      "synopsisBasis": "Original source title and visible chapter 'Davincis secret formula'; the description itself is generic YouTube creator text.",
+      "chapters": [
+        {
+          "time": "0:00",
+          "title": "Intro"
+        },
+        {
+          "time": "0:35",
+          "title": "Davincis secret formula"
+        },
+        {
+          "time": "3:40",
+          "title": "How to get free access"
+        },
+        {
+          "time": "7:05",
+          "title": "Conclusion"
+        }
+      ],
+      "sourceReliability": "Official verified channel; exact title, premiere date, creator, duration and visible chapter headings verified. Clearly an archive item, with no current access or offer claims.",
+      "assetKey": "research-conversation",
+      "watchUrl": "https://www.youtube.com/watch?v=nJderKXCOhM",
+      "observedAt": "2026-10-14",
+      "source": "Official verified MMCrypto YouTube channel",
+      "placement": "Dedicated videos section (#watch)",
+      "visualTreatment": "Original website typography and CSS labelled ARCHIVE / 2019. The acquired chapter still is not used because it contains platform UI and a coin-like shirt symbol."
+    }
+  ],
+  "images": [
+    {
+      "role": "PRISM hero portrait · conversation",
+      "localFile": "assets/chris-story-conversation.webp",
+      "sourceUrl": "https://www.instagram.com/chrismmcrypto/p/DaatKnrCOdz/",
+      "publishedAt": "2026-07-05",
+      "caption": "In conversation · July 2026",
+      "alt": "Chris smiling and gesturing during a recorded conversation",
+      "context": "First image of an official @chrismmcrypto carousel. Christopher is smiling and gesturing while seated at an interview table; no investment claim is reproduced in site copy.",
+      "objectPosition": "50% 48%",
+      "originalSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1600,
+        1600
+      ],
+      "bytes": 85194,
+      "observedAt": "2026-10-14",
+      "status": "Official public photograph; browser pageAssets export; resized only; no generated likeness or retouching.",
+      "visualCheck": "Visually checked: Chris is the only person in the selected photograph; no Bitcoin/BTC text or competing exchange branding appears.",
+      "transform": "Original complete square image downsampled from 4096px to 1600px. No crop or content alteration.",
+      "historicalContext": "Clearly dated contemporary illustration; not evidence of the 2017 origin story, student years or taxi-driving period.",
+      "visualTreatment": "MMCRYPTO-PRISM uses the full conversation photograph in the hero with its own CSS framing and motion treatment."
+    },
+    {
+      "sourceUrl": "https://www.instagram.com/chrismmcrypto/p/DaatKnrCOdz/",
+      "publishedAt": "2026-07-05",
+      "sourceContext": "First image of an official @chrismmcrypto carousel. Christopher is smiling and gesturing while seated at an interview table. The next carousel image tags @cryptokid. The caption reads: In the forest of realities I’m alone inside my treehouse!",
+      "alt": "Chris smiling and gesturing during a recorded conversation",
+      "caption": "In conversation · July 2026",
+      "objectPosition": "50% 48%",
+      "originalSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1600,
+        1600
+      ],
+      "bytes": 85194,
+      "observedAt": "2026-10-14",
+      "status": "Official public photograph; browser pageAssets export; resized only; no generated likeness or retouching.",
+      "visualCheck": "No competing exchange, Bitcoin, or BTC branding appears in the selected photograph.",
+      "transform": "Original complete square image downsampled from 4096px to 1600px. No crop or content alteration.",
+      "role": "Present-day creator conversation in the personal story",
+      "localFile": "assets/chris-story-conversation.webp",
+      "historicalContext": "Clearly dated contemporary illustration; not evidence of the 2017 origin story, student years or taxi-driving period.",
+      "variantUsage": "PRISM 02: source photograph for the locally background-removed hero derivative; full original remains bundled for provenance and is not repeated on the page."
+    },
+    {
+      "sourceUrl": "https://www.instagram.com/chrismmcrypto/p/DbxPOUDol96/",
+      "publishedAt": "2026-08-07",
+      "sourceContext": "Official @chrismmcrypto post. Christopher holds a dachshund inside a vehicle. The caption identifies the dog: Meet my German #dachshund Mila!",
+      "alt": "Chris holding his dachshund Mila in a quiet moment away from the screen",
+      "caption": "With Mila · August 2026",
+      "objectPosition": "46% 48%",
+      "originalSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1600,
+        1600
+      ],
+      "bytes": 332728,
+      "observedAt": "2026-10-14",
+      "status": "Official public photograph; browser pageAssets export; resized only; no generated likeness or retouching.",
+      "visualCheck": "No competing exchange, Bitcoin, or BTC branding appears in the selected photograph.",
+      "transform": "Original complete square image downsampled from 4096px to 1600px. No crop or content alteration.",
+      "role": "Present-day personal life in the personal story",
+      "localFile": "assets/chris-story-life.webp",
+      "historicalContext": "Clearly dated contemporary illustration; not evidence of the 2017 origin story, student years or taxi-driving period."
+    },
+    {
+      "role": "Health and training",
+      "localFile": "assets/chris-training.webp",
+      "sourceUrl": "https://www.instagram.com/chrismmcrypto/reel/DdsxGEcIIwV/",
+      "status": "Verified public reel cover; bundled as a local WebP asset",
+      "sourceContext": "Christopher's public Instagram training reel."
+    },
+    {
+      "role": "WEEX wordmark",
+      "localFile": "assets/weex-logo.png",
+      "sourceUrl": "https://www.weex.com/events/welcome-event?vipCode=syd0",
+      "status": "Official WEEX wordmark from previous website asset preparation; only the wordmark reused, no previous creator links or offer details"
+    },
+    {
+      "name": "chris-story-retrospective",
+      "sourceUrl": "https://www.instagram.com/chrismmcrypto/p/DFiCpf_T6Yb/",
+      "publishedAt": "2025-02-01",
+      "caption": "Looking back · February 2025",
+      "alt": "Chris standing in the driveway of a modern house in a full-body portrait",
+      "context": "Official verified Instagram post announcing a full-story video about going from taxi driver to the man he is today. Photo is 2025, not a student-era or 2017 photograph. Source includes cars and house; site copy must not imply verified investment performance.",
+      "objectPosition": "52% 52%",
+      "localFile": "assets/chris-story-retrospective.webp",
+      "originalSize": [
+        1440,
+        1080
+      ],
+      "size": [
+        1440,
+        1080
+      ],
+      "bytes": 270874,
+      "observedAt": "2026-10-14",
+      "status": "Official public color photograph; exported using browser pageAssets; no generated likeness or retouching.",
+      "visualCheck": "Visually checked: no Bitcoin/BTC text or competing exchange branding in selected image. Car manufacturer emblems remain authentic source detail.",
+      "transform": "Original whole image retained, converted to RGB WebP and downsampled only if larger than 1600px. No upsampling, crop or content alteration.",
+      "historicalContext": "Later archive illustration only; not evidence of the student, taxi-driving, 2017 launch or first-year events.",
+      "role": "Story chapter 1: later archive illustration"
+    },
+    {
+      "name": "chris-archive-selfie",
+      "sourceUrl": "https://www.instagram.com/chrismmcrypto/p/CStdbOlACE0/",
+      "publishedAt": "2021-08-18",
+      "caption": "Later portrait · August 2021",
+      "alt": "Chris smiling for a colorful selfie in a convertible in Dubai",
+      "context": "Official verified Instagram post, captioned Minutes before I sold my Lambo SVJ for #Crypto! Location tag Dubai, UAE. Do not reproduce the sale or investment claim in site copy.",
+      "objectPosition": "53% 57%",
+      "localFile": "assets/chris-archive-selfie.webp",
+      "originalSize": [
+        1124,
+        960
+      ],
+      "size": [
+        1124,
+        960
+      ],
+      "bytes": 349654,
+      "observedAt": "2026-10-14",
+      "status": "Official public color photograph; exported using browser pageAssets; no generated likeness or retouching.",
+      "visualCheck": "Visually checked: no Bitcoin/BTC text or competing exchange branding in selected image. Car manufacturer emblems remain authentic source detail.",
+      "transform": "Original whole image retained, converted to RGB WebP and downsampled only if larger than 1600px. No upsampling, crop or content alteration.",
+      "historicalContext": "Later archive illustration only; not evidence of the student, taxi-driving, 2017 launch or first-year events.",
+      "role": "Story chapter 2: later archive illustration"
+    },
+    {
+      "name": "chris-creator-portrait",
+      "sourceUrl": "https://www.instagram.com/chrismmcrypto/p/DaatKnrCOdz/?img_index=2",
+      "publishedAt": "2026-07-05",
+      "caption": "Creator portrait · July 2026",
+      "alt": "Chris standing beside the creator tagged as Crypto Kid at a recording studio",
+      "context": "Second photo of official verified Instagram carousel, visually distinct from first-photo seated conversation used in the existing site. Tagged @cryptokid. Instagram image alt identifies July 05, 2026; post date in browser timezone displays July 6. Month-only caption avoids timezone date difference.",
+      "objectPosition": "63% 40%",
+      "localFile": "assets/chris-creator-portrait.webp",
+      "originalSize": [
+        2774,
+        2774
+      ],
+      "size": [
+        1600,
+        1600
+      ],
+      "bytes": 158166,
+      "observedAt": "2026-10-14",
+      "status": "Official public color photograph; exported using browser pageAssets; no generated likeness or retouching.",
+      "visualCheck": "Visually checked: no Bitcoin/BTC text or competing exchange branding in selected image. Car manufacturer emblems remain authentic source detail.",
+      "transform": "Original whole image retained, converted to RGB WebP and downsampled only if larger than 1600px. No upsampling, crop or content alteration.",
+      "historicalContext": "Later archive illustration only; not evidence of the student, taxi-driving, 2017 launch or first-year events.",
+      "role": "Story chapter 3: later archive illustration"
+    },
+    {
+      "role": "MMCrypto official social wordmark",
+      "localFile": "assets/mmcrypto-logo.png",
+      "sourceUrl": "https://www.youtube.com/@MMCryptoTube",
+      "observedAt": "2026-10-14",
+      "status": "Official channel-banner crop; original black/cyan geometry preserved, with an added white outline for dark-background contrast. Used in navigation, footer and mobile member entry.",
+      "size": [
+        985,
+        188
+      ]
+    },
+    {
+      "role": "PRISM hero portrait · Dubai vehicle photograph",
+      "localFile": "assets/chris-hero.webp",
+      "sourceUrl": "https://www.instagram.com/chrismmcrypto/p/CcF9eqXtiZ_/",
+      "publishedAt": "2022-04-08",
+      "caption": "Dubai · April 2022",
+      "alt": "Chris MMCrypto smiling with his arms open in Dubai",
+      "context": "Official verified Instagram post used by the first MMCrypto website. Public color photograph showing Chris in front of vehicles in Dubai; no investment claim is reproduced in site copy.",
+      "objectPosition": "50% 50%",
+      "originalSize": [
+        910,
+        910
+      ],
+      "size": [
+        910,
+        910
+      ],
+      "observedAt": "2026-10-14",
+      "status": "Original public color photograph reused from the first MMCrypto website; no generated likeness or retouching.",
+      "visualCheck": "Visually checked: Chris is pictured with arms open in front of vehicles in Dubai; no Bitcoin/BTC text or competing exchange branding appears in the selected image.",
+      "transform": "Original 910×910 source retained; CSS framing, gradient edge treatment and restrained hover/ambient translation only.",
+      "historicalContext": "Public archive photograph; not evidence of the student, taxi-driving, 2017 launch or first-year events.",
+      "visualTreatment": "The first MMCrypto website photograph is used in the hero with the direction's own CSS framing and motion treatment."
+    }
+  ],
+  "weex": {
+    "officialHome": "https://www.weex.com/",
+    "registration": "https://www.weex.com/register",
+    "personalReferralUrl": null,
+    "campaignUrl": null,
+    "vipUrl": null,
+    "notes": [
+      "No MMCRYPTO-specific referral URL, campaign reward, VIP condition, or promotion period was supplied.",
+      "Registration uses the official generic URL until BD supplies an approved personal URL.",
+      "Campaign and VIP config entries remain null and preserve the official WEEX home fallback inside the corresponding information panel.",
+      "No referral code or reward terms have been copied from another creator."
+    ]
+  },
+  "deployment": {
+    "requestedAddress": "https://pro.weex.com/mmcrypto",
+    "status": "Requires deployment or routing by the WEEX domain owner; not configured by these static files."
+  },
+  "generalNotes": [
+    "Six verified market-library videos link to their original YouTube sources. Five use distinct original preview images; the 2019 archive uses website typography. Video files are not redistributed.",
+    "The official health Short is a separate text link in the health section.",
+    "Three original X posts are labelled Public commentary, not long-form articles. No long-form article authored by Christopher was verified.",
+    "Two reading-room notes are original website editorial material, explicitly not authored by Christopher.",
+    "Public source attribution records provenance and does not independently establish usage rights.",
+    "The website does not display a fabricated live market price, trading profit, campaign countdown or testimonial.",
+    "Original source titles are preserved for provenance. Display topic titles and synopses are editorial summaries supported by visible source descriptions or chapters, not direct quotations.",
+    "Public YouTube titles, dates, descriptions and chapters were verified. Playback required a bot-check sign-in in the research browser; the research does not claim full video viewing.",
+    "The candidate domain https://mmcrypto.trading failed DNS resolution during research and supplied no verified article source."
+  ],
+  "telegramSnapshot": {
+    "source": "https://t.me/MMCrypto",
+    "observedAt": "2026-10-09",
+    "displayName": "MMCrypto (Deutsch)",
+    "note": "User-supplied link verified as a German-speaking public community; page labels it accordingly. The official YouTube header also lists https://t.me/MMCryptoENG, but the supplied destination is retained."
+  },
+  "editorialRevision": {
+    "date": "2026-10-14",
+    "version": "Noir / Story6 / Linked2",
+    "direction": "Near-black and graphite base, silver-white typography, restrained MMCrypto cyan on primary actions, active chapter indicators, focus states, hover details and fine edges. Hero uses a localized softly masked glow, an ice-silver title gradient and a precise photo frame. No large blue surface blocks. Existing authentic imagery, story carousel, videos/articles and membership behavior are preserved; exchanges appear only after website login.",
+    "stylesheets": [
+      "neutral.css",
+      "theme.css",
+      "theme-members.css",
+      "content-sections.css"
+    ],
+    "officialBranding": "Authentic official YouTube banner wordmark replaces the earlier custom MM monogram; cyan brand symbol retained and used for the favicon.",
+    "palette": {
+      "background": "#0b0e13",
+      "surface": "#141a22",
+      "surfaceSoft": "#10151d",
+      "surfaceRaised": "#1b2430",
+      "primaryAccent": "#40bdeb",
+      "textAccent": "#6dcff4",
+      "lightAccent": "#a4e7ff",
+      "primaryText": "#f4f7fa",
+      "secondaryText": "#aab4c1"
+    }
+  },
+  "frontendRevision": {
+    "date": "2026-10-14",
+    "scope": "Separate six-video section and five-item articles/commentary section; existing preview membership and three-step exchange account association preserved.",
+    "catalogue": {
+      "total": 11,
+      "videos": 6,
+      "publicCommentary": 3,
+      "editorialNotes": 2,
+      "memberNotes": 1,
+      "videoSectionInitiallyVisible": 6,
+      "articleSectionInitiallyVisible": 5,
+      "articleFilters": {
+        "all": 5,
+        "commentary": 3,
+        "reading": 2,
+        "members": 1
+      },
+      "pagination": false
+    },
+    "notes": [
+      "Article filters operate only within #articles; all six videos remain visible in #watch. Membership events retain the selected article filter.",
+      "Member flows remain frontend previews using tab session storage, with an in-memory fallback. No real authentication, email delivery or Discord OAuth is connected.",
+      "Exchange verification defaults to preview. A future provider hook has a server-owned invitation contract; changing mode does not create a backend.",
+      "The public homepage and authentication dialog contain no exchange exposure. After website sign-in, Member Hub offers only WEEX onboarding. Other exchange listings and configuration have been removed.",
+      "Log In and signup dialogs offer email only. The Discord alternative button, divider, auth entry handler and obsolete CSS have been removed.",
+      "Compact single-column authentication: Log In and Sign Up headings distinguish modes, with one contextual switch below the form. Removed repeated marketing/sidebar/tab content and consolidated demo/storage copy. Website signup, email code flow and member callbacks remain intact."
+    ]
+  },
+  "storyRevision": {
+    "date": "2026-10-14",
+    "reference": "https://pro.weex.com/fireracing/",
+    "scope": "Visual inspiration only: scroll storytelling, crossfades, and active text emphasis. No reference-site biographical claims or media were reused.",
+    "contentSource": "User-provided MMCrypto BD profile",
+    "chapters": [
+      "German student and taxi driver",
+      "September 2017 channel launch",
+      "First-year persistence funded by taxi savings",
+      "Daily market content and community",
+      "Dubai, health and everyday discipline"
+    ],
+    "notes": [
+      "Narrative is website editorial copy based on the supplied biography, not a direct quote from Christopher.",
+      "All five chapters have distinct authentic color photographs with source/date captions; the first three use explicitly dated later archive illustrations, not historical evidence of student, taxi-driving, 2017-launch or first-year events.",
+      "The July 2026 posed portrait and seated conversation are distinct images from the same official carousel. Each photograph is used once; hero and health photographs remain different sources."
+    ]
+  },
+  "healthVideo": {
+    "id": "u1I9lzSNtzA",
+    "watchUrl": "https://www.youtube.com/shorts/u1I9lzSNtzA",
+    "originalTitle": "THE MOST EXPENSIVE MISTAKE OF YOUR LIFE!!!!!",
+    "observedAt": "2026-10-12",
+    "source": "Official MMCrypto and MMHealth channels",
+    "notes": "Official MMCrypto and MMHealth collaboration Short about unhealthy habits. The health section links the original source as text; it is not part of the six-video market library and has no repeated featured thumbnail.",
+    "placement": "Health section text link"
+  },
+  "publicCommentary": [
+    {
+      "id": "2109513358278054238",
+      "url": "https://x.com/MMCrypto/status/2109513358278054238",
+      "creator": "MMCrypto (@MMCrypto)",
+      "type": "Public X commentary",
+      "publishedAt": "2026-10-12",
+      "displayTitle": "Confirmation before conviction",
+      "synopsis": "A follow-up that distinguishes a positive weekly close from confirmed momentum and makes the outlook conditional on volume support.",
+      "originalText": "Bitcoin Weekly Closed above!\n\nKinda good news but not yet bullish confirmation.\n\n$102’000 Target only, if we close one weekly with volume support above $87’200.",
+      "dateVisible": "13:15 · 2026年10月12日",
+      "sourceReliability": "Direct public permalink, verified account, full text and exact date visible. Author's opinion, not an independent validation of the forecast.",
+      "observedAt": "2026-10-14"
+    },
+    {
+      "id": "2109308870560719087",
+      "url": "https://x.com/MMCrypto/status/2109308870560719087",
+      "creator": "MMCrypto (@MMCrypto)",
+      "type": "Public X commentary",
+      "publishedAt": "2026-10-11",
+      "displayTitle": "Watching the weekly close",
+      "synopsis": "A brief chart update tracking the approaching weekly close and linking back to the earlier candle discussion.",
+      "originalText": "Bitcoin: Weekly close in 8 hours! 👇",
+      "dateVisible": "23:43 · 2026年10月11日",
+      "quotedPostUrl": "https://x.com/MMCrypto/status/2108379018450141293",
+      "sourceReliability": "Direct public permalink, verified account, text, linked media and exact date visible. Short commentary, not a long-form research article.",
+      "observedAt": "2026-10-14"
+    },
+    {
+      "id": "2108379018450141293",
+      "url": "https://x.com/MMCrypto/status/2108379018450141293",
+      "creator": "MMCrypto (@MMCrypto)",
+      "type": "Public X commentary",
+      "publishedAt": "2026-10-09",
+      "displayTitle": "Why the weekly candle matters",
+      "synopsis": "A short chart post identifying the weekly candle as a decision point in the developing market outlook.",
+      "originalText": "Bitcoin: This Weekly Candle decides! 👇",
+      "dateVisible": "10:08 · 2026年10月9日",
+      "quotedPostUrl": "https://x.com/MMCrypto/status/2107838304779686217",
+      "sourceReliability": "Direct public permalink, verified account, text, linked media and exact date visible. Short commentary, not a long-form research article.",
+      "observedAt": "2026-10-14"
+    }
+  ],
+  "editorialNotes": [
+    {
+      "id": "context",
+      "title": "Read a market view with context",
+      "access": "Public",
+      "source": "Original educational material prepared for this website",
+      "notes": "Not written by or quoted from Christopher. Uses general questions about claims, evidence, source timing and uncertainty.",
+      "attribution": "Website editorial; not authored by Christopher"
+    },
+    {
+      "id": "checklist",
+      "title": "A calm pre-trade checklist",
+      "access": "Preview member note",
+      "source": "Original educational material prepared for this website",
+      "notes": "Not written by or quoted from Christopher. Frontend-only preview gating; the full text is present in the static source.",
+      "attribution": "Website editorial; not authored by Christopher"
+    }
+  ],
+  "exchangeCollaborations": {
+    "branding": "No exchange names, logos or direct destinations on the public homepage or authentication dialog. WEEX is introduced only after successful MMCrypto website signup/sign-in.",
+    "listings": [
+      {
+        "id": "weex",
+        "name": "WEEX",
+        "relationship": "Current collaboration",
+        "source": "User-directed website partnership context",
+        "homeUrl": "https://www.weex.com/",
+        "designatedRegistrationUrl": null,
+        "inviteCode": null
+      }
+    ],
+    "notes": [
+      "A general official page or generic registration link does not establish an invitation relationship.",
+      "No designated MMCrypto referral links, expected invitation details or benefits were supplied for this preview.",
+      "Website membership and WEEX accounts are separate. WEEX onboarding is optional, starts after membership and never automatically navigates to an external registration page."
+    ]
+  },
+  "exchangeAssociationPreview": {
+    "mode": "preview",
+    "steps": [
+      "Register through the designated exchange referral link and return; simulated in preview.",
+      "Enter the separate exchange account email and numeric UID.",
+      "Request referral verification and show the returned outcome."
+    ],
+    "emailRelationship": "The exchange email may differ from the website member email.",
+    "fixtureEmail": "exchange.demo@example.com",
+    "fixtures": {
+      "10000001": "matched",
+      "10000002": "invitation_mismatch",
+      "10000003": "not_found",
+      "10000004": "unavailable"
+    },
+    "otherInputs": "Other email/UID combinations return demo not_found.",
+    "providerContract": {
+      "global": "window.MM_EXCHANGE_PROVIDER",
+      "method": "verifyReferral",
+      "input": [
+        "exchangeId",
+        "email",
+        "uid"
+      ],
+      "responseStatuses": [
+        "matched",
+        "invitation_mismatch",
+        "not_found",
+        "unavailable"
+      ],
+      "timeoutSeconds": 15
+    },
+    "notes": [
+      "Preview mode does not contact an exchange or verification provider.",
+      "A live provider is called only for a confirmed partner with a designated registration URL and a configured verifyReferral method.",
+      "The trusted server owns the expected invitation rule. Browser display inviteCode and numeric UID format are not proof.",
+      "Membership preview and exchange verification mode are independent; the adapter hook is not a production authentication system.",
+      "Only matched results save an association. No preview result verifies a real account or referral, creates referral credit, or grants rewards or VIP eligibility."
+    ],
+    "entry": "Complete MMCrypto website signup or sign-in, then select Set up WEEX in Member Hub.",
+    "successPresentation": {
+      "view": "Dedicated completion panel with checkmark, exchange email, UID, completed steps, and return-to-Member-Hub action.",
+      "demoTitle": "WEEX linked · demo",
+      "verifiedTitle": "WEEX linked successfully",
+      "guard": "Shown only on matched; preview explicitly disclaims any real account or referral verification. Persistent hub status is updated. Failed responses keep the detail form and show their error."
+    }
+  },
+  "storyLayoutRevision": {
+    "date": "2026-10-14",
+    "version": "story6",
+    "scope": "Five photo-illustrated chapters share one fixed-height native horizontal scroll-snap carousel. Authentic images, gradients and narrative text share one canvas. On narrow screens, a clear photograph at the top fades into a vertically scrollable copy area. Each chapter includes source/date captions. Tabs, previous/next buttons, keyboard navigation, horizontal swipes, chapter deep links, reduced-motion and pause preferences are preserved. No autoplay or vertical wheel interception."
+  },
+  "brandLogo": {
+    "sourceUrl": "https://www.youtube.com/@MMCryptoTube",
+    "observedAt": "2026-10-14",
+    "sourceDescription": "Current banner of the verified official MMCrypto YouTube channel",
+    "sourceImageUrl": "https://yt3.googleusercontent.com/GkzoIjHVmPklGgiNVqAkloV2PnleOa47DR3MB2DqO7qJuUnwVVGmoMdf9gZx5bCJeJRQd8Sj=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+    "sourceDimensions": [
+      2119,
+      351
+    ],
+    "cropBounds": [
+      567,
+      10,
+      1555,
+      198
+    ],
+    "transformations": [
+      "Crop only the authentic wordmark, omitting tagline and social links",
+      "Remove white banner background and faint decorative reflection by luminance threshold; preserve original black/cyan pixels and glyph geometry",
+      "Add a uniform 6px white outline to original silhouette for dark-background version; no redrawing or retyping",
+      "Crop the original cyan symbol for favicon, centered on #0c0e12"
+    ],
+    "displayAsset": "assets/mmcrypto-logo.png",
+    "originalColorAsset": "assets/mmcrypto-logo-original.png",
+    "favicon": "assets/favicon.png",
+    "notes": "Official banner wordmark has no red TEAM stamp. Outlined output is a contrast treatment to match the supplied thumbnail style, not a separate official vector asset. High-resolution original preserved."
+  },
+  "visualVariant": {
+    "name": "PRISM Bright Aurora Field / car portrait edition",
+    "reviewedAt": "2026-10-26",
+    "notes": "Bright pearl-blue, electric cyan, ultraviolet and coral presentation. Hero uses a distinct colorful car portrait so the first screen has stronger personality; story chapters retain their distinct archive images.",
+    "heroAsset": "assets/chris-car-hero.png",
+    "heroSource": "https://www.instagram.com/chrismmcrypto/p/CStdbOlACE0/",
+    "heroSourceAsset": "assets/chris-archive-selfie.webp",
+    "transformation": "Public car portrait crop retained as a supplied local asset; CSS framing, color treatment and restrained hover/ambient translation only."
+  }
+}
