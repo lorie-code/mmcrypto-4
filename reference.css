@@ -1793,3 +1793,330 @@ body.reference-site .hero[data-prism-motion="still"]::after {
     margin-top:18px !important;
   }
 }
+
+/* -------------------------------------------------------------------------
+   UI refresh · larger hero portrait + desktop reading scale
+
+   The supplied MMCRYPTO board gives the portrait enough presence to read as
+   part of the opening composition rather than as a small marker. Keep the
+   mobile geometry from the previous responsive pass intact and use a square,
+   editorial crop on wider screens. The desktop type pass raises small labels,
+   metadata and controls to a readable 12px floor without changing the large
+   display typography.
+   ------------------------------------------------------------------------- */
+@media (min-width:901px) {
+  body.reference-site .hero.prism-hero-v2 {
+    min-height:708px;
+  }
+
+  body.reference-site .hero .hero-photo {
+    left:63%;
+    top:148px;
+    width:min(36%,390px);
+    height:auto;
+    aspect-ratio:1 / 1;
+    border-radius:24px;
+  }
+}
+
+@media (min-width:901px) and (max-width:1199px) {
+  body.reference-site .hero .hero-photo {
+    left:58%;
+    top:151px;
+    width:39%;
+    max-width:340px;
+  }
+}
+
+/* Final hero image correction: the visible portrait in this edition is the
+   `.hero-member-invite::before` canvas (the older `.hero-photo` is retired).
+   Match the supplied 357 × 357 board measurement and pull the proof rail up
+   by removing the unused minimum-height below the CTA row. */
+@media (min-width:901px) {
+  body.reference-site .hero.prism-hero-v2 {
+    min-height:620px;
+    padding-bottom:20px;
+  }
+  body.reference-site .hero .hero-copy {
+    min-height:420px;
+  }
+  body.reference-site .hero .hero-member-invite {
+    top:132px;
+    right:clamp(42px,8vw,112px);
+    width:357px;
+    height:357px;
+  }
+  body.reference-site .hero .hero-member-invite::before {
+    width:357px;
+    height:357px;
+    border-radius:32px;
+  }
+}
+
+@media (min-width:601px) and (max-width:900px) {
+  body.reference-site .hero .hero-member-invite {
+    top:136px;
+    right:5%;
+    width:min(357px,calc(100vw - 64px));
+    height:min(357px,calc(100vw - 64px));
+  }
+  body.reference-site .hero .hero-member-invite::before {
+    width:100%;
+    height:100%;
+    border-radius:28px;
+  }
+  body.reference-site .hero.prism-hero-v2 {
+    padding-bottom:18px;
+  }
+}
+
+@media (max-width:600px) {
+  body.reference-site .hero .hero-member-invite {
+    top:146px;
+    right:10px;
+    width:min(220px,calc(100vw - 64px));
+    height:min(220px,calc(100vw - 64px));
+  }
+  body.reference-site .hero .hero-member-invite::before {
+    width:100%;
+    height:100%;
+    border-radius:22px;
+  }
+}
+
+@media (min-width:601px) and (max-width:900px) {
+  body.reference-site .hero .hero-photo {
+    left:55%;
+    top:332px;
+    width:250px;
+    height:250px;
+    aspect-ratio:1 / 1;
+    border-radius:20px;
+  }
+}
+
+@media (min-width:601px) {
+  /* Navigation, hero support copy and the proof rail. */
+  body.reference-site .button,
+  body.reference-site .member-text-button,
+  body.reference-site .text-link,
+  body.reference-site .hero .hero-actions .button,
+  body.reference-site #site-nav,
+  body.reference-site #site-nav a,
+  body.reference-site #site-nav .nav-signin,
+  body.reference-site .header-cta,
+  body.reference-site .hero .hero-kicker,
+  body.reference-site .hero .hero-kicker span,
+  body.reference-site .hero .hero-browse,
+  body.reference-site .hero .hero-member-invite p,
+  body.reference-site .hero .hero-signoff span:not(.signoff-rule),
+  body.reference-site .portrait-index,
+  body.reference-site .hero-visual figcaption,
+  body.reference-site .hero-visual figcaption a,
+  body.reference-site .proof-strip p,
+  body.reference-site .proof-statement .eyebrow,
+  body.reference-site .ticker-track > span {
+    font-size:12px;
+  }
+
+  /* Story navigation and chapter metadata. */
+  body.reference-site .journey-heading .eyebrow,
+  body.reference-site .journey-intro > span,
+  body.reference-site .journey-tab > span,
+  body.reference-site .journey-tab > b,
+  body.reference-site .journey-chapter-meta > span,
+  body.reference-site .journey-chapter-meta > p,
+  body.reference-site .journey-tags,
+  body.reference-site .journey-photo figcaption,
+  body.reference-site .journey-gesture,
+  body.reference-site .journey-reading,
+  body.reference-site .journey-closing .eyebrow,
+  body.reference-site .journey-closing .text-link {
+    font-size:12px;
+  }
+
+  /* Video and article libraries. */
+  body.reference-site .content-section-actions .text-link,
+  body.reference-site .content-section-jump,
+  body.reference-site .video-library-caption > span,
+  body.reference-site .video-library-caption > p,
+  body.reference-site .research-source-strip span,
+  body.reference-site .research-art-kicker,
+  body.reference-site .research-note-date,
+  body.reference-site .research-archive-guest,
+  body.reference-site .research-duration,
+  body.reference-site .library-meta,
+  body.reference-site .library-description,
+  body.reference-site .library-origin,
+  body.reference-site .library-action,
+  body.reference-site .library-load-more span,
+  body.reference-site .source-note,
+  body.reference-site .library-filter,
+  body.reference-site .library-count,
+  body.reference-site .article-index span:last-child,
+  body.reference-site .articles-section .library-meta,
+  body.reference-site .articles-section .library-origin,
+  body.reference-site .articles-section .library-action,
+  body.reference-site .articles-section .articles-source-note {
+    font-size:12px;
+  }
+
+  /* Health, social, footer and the member / account surfaces. */
+  body.reference-site .health-brand,
+  body.reference-site .health-pill,
+  body.reference-site .health-values > span,
+  body.reference-site .health-handle,
+  body.reference-site .health-video-link,
+  body.reference-site .social-card > p,
+  body.reference-site .social-card > span,
+  body.reference-site .collaboration-note,
+  body.reference-site .footer-top,
+  body.reference-site .back-top,
+  body.reference-site .footer-bottom,
+  body.reference-site .footer-bottom > span,
+  body.reference-site .legal,
+  body.reference-site .mobile-cta > span b,
+  body.reference-site .member-note,
+  body.reference-site .hub-topline .text-link,
+  body.reference-site .hub-topline .member-text-button,
+  body.reference-site .hub-session > span:last-child,
+  body.reference-site .hub-badge,
+  body.reference-site .hub-preview,
+  body.reference-site .hub-card-header .eyebrow,
+  body.reference-site .hub-card > .eyebrow,
+  body.reference-site .hub-risk-note,
+  body.reference-site .member-dialog-head .eyebrow,
+  body.reference-site .member-preview-note,
+  body.reference-site .auth-check,
+  body.reference-site .auth-legal > .member-note,
+  body.reference-site .auth-demo-code span,
+  body.reference-site .auth-demo-code small,
+  body.reference-site .link-fixture,
+  body.reference-site .link-fixture-options button,
+  body.reference-site .link-progress li,
+  body.reference-site .link-invite-row,
+  body.reference-site #link-registration-help,
+  body.reference-site .link-step > .eyebrow,
+  body.reference-site .link-step-heading .eyebrow,
+  body.reference-site .link-fixtures .member-note,
+  body.reference-site .partners-note button,
+  body.reference-site .partners-risk,
+  body.reference-site .hub-steps small,
+  body.reference-site .hub-pending-row p,
+  body.reference-site #link-eligibility-note,
+  body.reference-site .exchange-label,
+  body.reference-site .exchange-invite,
+  body.reference-site .exchange-card > .member-note,
+  body.reference-site .exchange-actions .button,
+  body.reference-site .exchange-actions .text-link,
+  body.reference-site .hub-onboarding-step strong,
+  body.reference-site .hub-onboarding-step p,
+  body.reference-site .hub-exchange-heading .eyebrow,
+  body.reference-site .hub-exchange-heading .member-text-button,
+  body.reference-site .hub-exchange-intro,
+  body.reference-site .video-modal-top .eyebrow,
+  body.reference-site .video-modal-bottom,
+  body.reference-site #video-frame .mm-player-help,
+  body.reference-site #video-frame .mm-player-external,
+  body.reference-site #video-frame .mm-player-retry {
+    font-size:12px;
+  }
+
+  /* Keep form controls legible when they inherit a small theme value. */
+  body.reference-site input,
+  body.reference-site textarea,
+  body.reference-site select,
+  body.reference-site .auth-field label,
+  body.reference-site .auth-error,
+  body.reference-site .link-result {
+    font-size:12px;
+  }
+}
+
+/* Hero portrait size correction: the reference board uses a true 357 × 357
+   square. Keep that exact desktop canvas instead of letting the old fluid
+   width compress the image into a shorter card. */
+@media (min-width:1200px) {
+  body.reference-site .hero .hero-photo {
+    left:64%;
+    top:148px;
+    width:357px;
+    height:357px;
+    max-width:none;
+    aspect-ratio:1 / 1;
+  }
+}
+
+@media (min-width:901px) and (max-width:1199px) {
+  body.reference-site .hero .hero-photo {
+    left:58%;
+    top:151px;
+    width:min(357px,38vw);
+    height:min(357px,38vw);
+    max-width:none;
+    aspect-ratio:1 / 1;
+  }
+}
+
+/* Align the creator sign-off with the first line of the hero title, matching
+   the supplied UI board instead of pinning it to the header edge. */
+@media (min-width:901px) {
+  body.reference-site .hero .hero-signoff {
+    top:135px;
+    right:0;
+  }
+}
+
+/* Keep the creator sign-off above the portrait, with the same right edge as
+   the 357px avatar so no part of the name or subtitle is covered. */
+@media (min-width:901px) {
+  body.reference-site .hero .hero-signoff {
+    top:80px;
+    right:clamp(42px,8vw,112px);
+    width:357px;
+    z-index:12;
+    justify-content:flex-start;
+  }
+}
+
+/* Mobile hero balance — give the title its own lane and keep the portrait
+   visible without letting it cover the lettering. The tablet-sized mobile
+   preview uses the 601–900px breakpoint, so this must come after the desktop
+   portrait correction above. */
+@media (max-width:900px) {
+  body.reference-site .hero.prism-hero-v2 {
+    padding-top:28px !important;
+  }
+  body.reference-site .hero .hero-member-invite {
+    top:126px !important;
+    right:14px !important;
+    width:clamp(210px,34vw,250px) !important;
+    height:clamp(210px,34vw,250px) !important;
+  }
+  body.reference-site .hero .hero-member-invite::before {
+    width:100% !important;
+    height:100% !important;
+    border-radius:24px;
+  }
+  body.reference-site .hero h1 {
+    max-width:calc(100% - clamp(240px,38vw,280px)) !important;
+  }
+}
+
+@media (max-width:600px) {
+  body.reference-site .hero.prism-hero-v2 {
+    padding-top:23px !important;
+  }
+  body.reference-site .hero .hero-member-invite {
+    top:112px !important;
+    right:10px !important;
+    width:clamp(140px,31vw,180px) !important;
+    height:clamp(140px,31vw,180px) !important;
+  }
+  body.reference-site .hero .hero-member-invite::before {
+    border-radius:20px;
+  }
+  body.reference-site .hero h1 {
+    max-width:calc(100% - clamp(165px,38vw,195px)) !important;
+  }
+}
